@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f9fa;
+  --foreground: #1e293b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Academic seal texture background helper */
+.bg-academic-pattern {
+  background-color: #002147;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-academic-light {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(0, 33, 71, 0.05) 1px, transparent 0);
+  background-size: 20px 20px;
+}
