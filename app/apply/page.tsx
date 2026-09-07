@@ -572,7 +572,7 @@ export default function ApplyPage() {
       <section className="bg-ui-navy-950 text-white py-12 px-4 sm:px-6 lg:px-8 border-b-4 border-ui-gold-500 relative">
         <div className="max-w-4xl mx-auto text-center space-y-3">
           <div className="inline-flex items-center gap-2 bg-ui-gold-500/10 text-ui-gold-300 border border-ui-gold-500/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Admissions Portal 2024/2025
+            Admissions Portal 2026/2027
           </div>
           <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white">
             Online Postgraduate Admission Application
