@@ -20,7 +20,7 @@ export const CallToActionBanner: React.FC = () => {
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Get complete details on program structures, semester course codes, faculty credentials, tuition breakdowns, and entry prerequisites.
+              Get complete details on program structures, semester course codes, faculty credentials, delivery schedules, and entry prerequisites.
             </p>
           </div>
 

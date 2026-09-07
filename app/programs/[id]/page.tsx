@@ -7,8 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { AnnouncementTicker } from "@/components/AnnouncementTicker";
 import { PROGRAMS } from "@/data/programs";
-import { FEE_STRUCTURES } from "@/data/fees";
-import { formatCurrency } from "@/lib/utils";
+import { FEE_GUIDELINES } from "@/data/fees";
 import { 
   GraduationCap, 
   Clock, 
@@ -46,7 +45,7 @@ export default function ProgramDetailPage() {
     );
   }
 
-  const feeStructure = FEE_STRUCTURES.find((f) => f.programId === program.id);
+  const feeGuideline = FEE_GUIDELINES.find((f) => f.programId === program.id);
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 font-sans">
@@ -79,7 +78,7 @@ export default function ProgramDetailPage() {
             {program.description}
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-slate-800 text-xs text-slate-300">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-xs text-slate-300">
             <div>
               <span className="block text-slate-500 text-[10px] uppercase font-bold">Duration</span>
               <span className="font-semibold text-white">{program.duration}</span>
@@ -89,12 +88,8 @@ export default function ProgramDetailPage() {
               <span className="font-semibold text-white">{program.mode}</span>
             </div>
             <div>
-              <span className="block text-slate-500 text-[10px] uppercase font-bold">Application Fee</span>
-              <span className="font-semibold text-ui-gold-400">{formatCurrency(program.applicationFee)}</span>
-            </div>
-            <div>
-              <span className="block text-slate-500 text-[10px] uppercase font-bold">Tuition / Session</span>
-              <span className="font-semibold text-ui-gold-400">{formatCurrency(program.tuition)}</span>
+              <span className="block text-slate-500 text-[10px] uppercase font-bold">Admissions</span>
+              <span className="font-semibold text-emerald-400">Applications Open</span>
             </div>
           </div>
         </div>
@@ -162,12 +157,12 @@ export default function ProgramDetailPage() {
               </div>
             </div>
 
-            {feeStructure && (
+            {FEE_GUIDELINES.find((f) => f.programId === program.id) && (
               <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                 <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
                   <CreditCard className="w-6 h-6 text-ui-navy-900" />
                   <h2 className="font-serif text-2xl font-bold text-ui-navy-900">
-                    Itemized Fee Schedule
+                    Fee Guidelines & Installment Structure
                   </h2>
                 </div>
 
@@ -176,16 +171,14 @@ export default function ProgramDetailPage() {
                     <thead>
                       <tr className="bg-slate-100 text-slate-700 border-b border-slate-200 font-bold uppercase">
                         <th className="p-3">Fee Category</th>
-                        <th className="p-3">Description</th>
-                        <th className="p-3 text-right">Amount (NGN)</th>
+                        <th className="p-3">Coverage & Details</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-700">
-                      {feeStructure.breakdown.map((item, idx) => (
+                      {FEE_GUIDELINES.find((f) => f.programId === program.id)?.breakdown.map((item, idx) => (
                         <tr key={idx} className="hover:bg-slate-50">
                           <td className="p-3 font-semibold text-ui-navy-900">{item.category}</td>
-                          <td className="p-3 text-slate-500">{item.description}</td>
-                          <td className="p-3 text-right font-mono font-bold text-slate-900">{formatCurrency(item.amount)}</td>
+                          <td className="p-3 text-slate-600">{item.description}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -193,8 +186,8 @@ export default function ProgramDetailPage() {
                 </div>
 
                 <div className="p-4 bg-ui-gold-500/10 border border-ui-gold-400/40 rounded-xl text-xs text-ui-navy-950">
-                  <span className="font-bold">Flexible Installments: </span>
-                  {feeStructure.paymentOptions.installmentPlan}
+                  <span className="font-bold">Flexible Installment Options: </span>
+                  {FEE_GUIDELINES.find((f) => f.programId === program.id)?.paymentOptions.installmentPlan}
                 </div>
               </div>
             )}
@@ -225,7 +218,7 @@ export default function ProgramDetailPage() {
                   href="/fees"
                   className="w-full bg-ui-navy-950 hover:bg-slate-900 border border-slate-700 text-slate-200 text-xs font-semibold py-3 rounded-xl flex items-center justify-center gap-2"
                 >
-                  Calculate Installment Plan
+                  View Financial Guidelines
                 </Link>
               </div>
 

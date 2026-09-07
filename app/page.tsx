@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { AnnouncementTicker } from "@/components/AnnouncementTicker";
 import { HeroSection } from "@/components/HeroSection";
+import { HomeVisionMissionPreview } from "@/components/HomeVisionMissionPreview";
 import { WhyUIConsultancy } from "@/components/WhyUIConsultancy";
 import { FeaturedProgramsSection } from "@/components/FeaturedProgramsSection";
 import { AdmissionsPathwaySection } from "@/components/AdmissionsPathwaySection";
@@ -24,6 +25,7 @@ export default function HomePage() {
 
       <main className="flex-grow">
         <HeroSection />
+        <HomeVisionMissionPreview />
         <WhyUIConsultancy />
         <FeaturedProgramsSection />
         <AdmissionsPathwaySection />

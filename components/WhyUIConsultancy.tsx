@@ -39,8 +39,8 @@ export const WhyUIConsultancy: React.FC = () => {
     },
     {
       icon: Building2,
-      title: "Affordable Tuition & Installment Plans",
-      description: "High quality postgraduate education made accessible with flexible term payments, competitive fees, and clear cost breakdowns without hidden charges."
+      title: "Flexible Financial Payment Policy",
+      description: "High quality postgraduate education made accessible with manageable installment schedules, transparent policies, and corporate support without financial strain."
     }
   ];
 

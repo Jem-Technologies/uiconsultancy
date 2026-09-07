@@ -2,29 +2,33 @@
 
 import React from "react";
 import { Star, Quote } from "lucide-react";
+import { ACADEMIC_IMAGES } from "@/data/images";
 
 export const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      name: "Engr. Babatunde Adeyemi",
+      name: "Mrs. Folashade Aina",
       role: "Lead Systems Architect, FirstBank Nigeria",
       program: "PGD Computer Science & IT (2022 Cohort)",
-      quote: "As an HND Electrical Engineering graduate, I needed a respected academic bridge to qualify for M.Sc studies and managerial roles. The UI Consultancy PGD provided rigorous computer science modules that enabled me to transition smoothly into senior cloud architecture.",
-      badge: "HND to M.Sc Conversion Success"
+      image: ACADEMIC_IMAGES.testimonials[2].img,
+      quote: "As an HND graduate, I was passed over for promotions despite my technical skills. The UI Consultancy PGD gave me the recognized University Senate degree that qualified me for cloud architecture leadership and direct M.Sc entry.",
+      badge: "HND to M.Sc Conversion"
     },
     {
-      name: "Dr. Funmi Alabi-Okoro",
-      role: "Senior Public Health Consultant, WHO West Africa",
-      program: "PGD Occupational Health, Safety & Environment",
-      quote: "The HSE Postgraduate Diploma curriculum at UI Consultancy was incredibly thorough. The practical industrial audit sessions and expert professors equipped me with safety governance frameworks that directly boosted my international consulting career.",
-      badge: "Executive Career Acceleration"
+      name: "Engr. Nnamdi Azikiwe Jr.",
+      role: "Senior Safety Manager, Shell West Africa",
+      program: "PGD Occupational Health & Safety",
+      image: ACADEMIC_IMAGES.testimonials[1].img,
+      quote: "The HSE Postgraduate Diploma curriculum at UI Consultancy was practical and flexible. Weekend lectures allowed me to work full-time while earning an accredited UI qualification that boosted my international consulting standing.",
+      badge: "Career Promotion"
     },
     {
-      name: "Chidi Nwachukwu",
-      role: "Operations Director, Zenith Maritime Logistics",
+      name: "Dr. Olabisi Adeleke",
+      role: "Operations Director, Zenith Logistics",
       program: "PGD Business Management & Administration",
-      quote: "Balancing full-time job demands with postgraduate study was seamless thanks to the weekend executive delivery. The knowledge gained in financial management and corporate strategy gave me immediate ROI at my workplace.",
-      badge: "Flexible Executive Delivery"
+      image: ACADEMIC_IMAGES.testimonials[0].img,
+      quote: "I graduated with a Third Class degree years ago and thought my academic journey was locked. UI Consultancy welcomed me with open arms, challenged me, and helped me build the GPA needed for my MBA.",
+      badge: "Third-Class Rebuilding Success"
     }
   ];
 
@@ -37,7 +41,7 @@ export const TestimonialsSection: React.FC = () => {
             Alumni & Student Impact
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ui-navy-900">
-            Real Stories of Career Transformation
+            Real Stories of Career Transformation & Success
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
             Discover how UI Consultancy Postgraduate Diplomas empower graduates to elevate their professions and achieve academic excellence.
@@ -65,16 +69,23 @@ export const TestimonialsSection: React.FC = () => {
                 <Quote className="w-8 h-8 text-ui-gold-600/40" />
 
                 <p className="text-slate-700 text-xs sm:text-sm leading-relaxed italic">
-                  "{item.quote}"
+                  &ldquo;{item.quote}&rdquo;
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-200 space-y-1">
-                <h4 className="font-serif font-bold text-base text-ui-navy-900">
-                  {item.name}
-                </h4>
-                <p className="text-xs text-slate-600 font-medium">{item.role}</p>
-                <p className="text-[11px] text-ui-gold-700 font-semibold">{item.program}</p>
+              <div className="pt-4 border-t border-slate-200 flex items-center gap-3">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-12 h-12 rounded-full object-cover border-2 border-ui-gold-500 shadow"
+                />
+                <div>
+                  <h4 className="font-serif font-bold text-base text-ui-navy-900">
+                    {item.name}
+                  </h4>
+                  <p className="text-xs text-slate-600 font-medium">{item.role}</p>
+                  <p className="text-[11px] text-ui-gold-700 font-semibold">{item.program}</p>
+                </div>
               </div>
             </div>
           ))}
