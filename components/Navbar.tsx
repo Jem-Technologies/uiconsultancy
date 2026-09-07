@@ -40,32 +40,47 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm font-sans">
       {/* Top Portal & Access Bar */}
-      <div className="bg-ui-navy-950 text-white text-xs py-2 px-4 border-b border-ui-gold-500/30">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-3 overflow-x-auto no-scrollbar py-0.5">
-            <span className="bg-ui-gold-500 text-ui-navy-950 font-extrabold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider shrink-0">
-              PORTAL SYSTEM
+      <div className="bg-ui-navy-950 text-white text-xs py-2.5 px-4 border-b border-ui-gold-500/40 shadow-inner">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+          <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-0.5 w-full md:w-auto">
+            <span className="bg-ui-gold-500 text-ui-navy-950 font-extrabold px-2.5 py-0.5 rounded text-[10px] uppercase tracking-wider shrink-0 flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-ui-navy-950 animate-pulse"></span>
+              PORTAL HUB
             </span>
-            <Link href="/portal" className="text-slate-200 hover:text-ui-gold-300 font-semibold transition-colors flex items-center gap-1 shrink-0">
-              <GraduationCap className="w-3.5 h-3.5 text-ui-gold-400" /> Student Login
+            <Link
+              href="/portal?tab=student"
+              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
+            >
+              <GraduationCap className="w-3.5 h-3.5 text-ui-gold-400" /> Student Portal
             </Link>
-            <span className="text-slate-600">|</span>
-            <Link href="/apply" className="text-slate-200 hover:text-ui-gold-300 font-semibold transition-colors flex items-center gap-1 shrink-0">
+            <Link
+              href="/portal?tab=applicant"
+              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
+            >
               <FileText className="w-3.5 h-3.5 text-ui-gold-400" /> Applicant Portal & Registration
             </Link>
-            <span className="text-slate-600">|</span>
-            <Link href="/verify" className="text-slate-200 hover:text-ui-gold-300 font-semibold transition-colors flex items-center gap-1 shrink-0">
-              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" /> Credential Verification
+            <Link
+              href="/portal?tab=staff"
+              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" /> Staff & Lecturer Portal
+            </Link>
+            <Link
+              href="/verify"
+              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> Verification
             </Link>
           </div>
 
           <div className="hidden lg:flex items-center gap-4 text-slate-300 text-[11px]">
-            <span className="flex items-center gap-1">
+            <span className="flex items-center gap-1.5 bg-ui-navy-900/50 px-2.5 py-1 rounded border border-slate-800">
               <PhoneCall className="w-3.5 h-3.5 text-ui-gold-400" />
-              Admissions Desk: +234 (0) 803 123 4567
+              Admissions Helpline: <strong className="text-white">+234 (0) 803 123 4567</strong>
             </span>
-            <span className="text-slate-700">|</span>
-            <span className="text-ui-gold-300 font-medium">Session 2024/2025</span>
+            <span className="text-ui-gold-300 font-semibold bg-ui-gold-500/10 px-2 py-0.5 rounded border border-ui-gold-500/20">
+              Academic Session 2024/2025
+            </span>
           </div>
         </div>
       </div>
