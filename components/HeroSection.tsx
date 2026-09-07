@@ -1,120 +1,161 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { 
-  GraduationCap, 
   ArrowRight, 
   ShieldCheck, 
   BookOpen, 
-  CheckCircle2
+  ChevronLeft,
+  ChevronRight,
+  GraduationCap,
+  Sparkles
 } from "lucide-react";
+import { ACADEMIC_IMAGES } from "@/data/images";
 
 export const HeroSection: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % ACADEMIC_IMAGES.hero.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % ACADEMIC_IMAGES.hero.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev - 1 + ACADEMIC_IMAGES.hero.length) % ACADEMIC_IMAGES.hero.length);
+  };
+
   return (
-    <section className="relative bg-ui-navy-950 text-white overflow-hidden border-b-4 border-ui-gold-500 font-sans">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+    <section className="relative bg-ui-navy-950 text-white overflow-hidden border-b-4 border-ui-gold-500 font-sans min-h-[580px] flex items-center">
+      {/* Background Images for Carousel */}
+      {ACADEMIC_IMAGES.hero.map((slide, idx) => (
+        <div
+          key={idx}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            idx === currentSlide ? "opacity-100 z-0" : "opacity-0 z-0"
+          }`}
+        >
+          <img
+            src={slide.url}
+            alt={slide.title}
+            className="w-full h-full object-cover object-center scale-105 transition-transform duration-10000 ease-linear"
+          />
+          {/* Gradient overlay: dark dimmed on left side for text readability, clear on right for image visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-ui-navy-950 via-ui-navy-950/90 to-ui-navy-950/40" />
+        </div>
+      ))}
+
+      {/* Content Container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
+          {/* Left Column - Empathetic Text & CTA */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 bg-ui-gold-500/10 border border-ui-gold-500/30 px-3.5 py-1.5 rounded-full text-ui-gold-300 text-xs font-semibold tracking-wide">
+
+            <div className="inline-flex items-center gap-2 bg-ui-gold-500/20 border border-ui-gold-400/40 px-3.5 py-1.5 rounded-full text-ui-gold-300 text-xs font-bold tracking-wide backdrop-blur-md">
               <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
-              <span>Official University of Ibadan Consultancy Services Unit</span>
+              <span>University of Ibadan Senate Accredited Programs</span>
             </div>
 
-            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Premier Postgraduate & Higher Diplomas For <span className="text-ui-gold-400 font-serif italic">Career Leadership</span>
+            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
+              Your Pathway To A <span className="text-ui-gold-400 font-serif italic">Higher Master’s Degree</span> & Professional Success
             </h1>
 
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-              Advance your professional standing with flexible, Senate-approved postgraduate diplomas from Nigeria’s premier university. Designed for working professionals, HND holders, and Third Class graduates seeking Master’s degree entry and career acceleration.
+            <p className="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl font-normal drop-shadow-sm">
+              You’ve worked hard to get your life going. Whether you hold an HND, a Third-Class degree, or are looking to pivot into a new career, our flexible Postgraduate Diplomas give you the recognized credential and confidence to rise higher.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-200">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>100% University Senate Approved Diplomas</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs sm:text-sm text-slate-100 font-medium">
+              <div className="flex items-center gap-2 bg-ui-navy-900/60 p-2.5 rounded-lg border border-slate-700/60 backdrop-blur-sm">
+                <GraduationCap className="w-4 h-4 text-ui-gold-400 shrink-0" />
+                <span>100% Senate Approved UI PGDs</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>Weekend Blended & Distance Online Tracks</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>Bridge HND & 3rd Class to M.Sc Eligibility</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>Flexible Installment Tuition Options</span>
+              <div className="flex items-center gap-2 bg-ui-navy-900/60 p-2.5 rounded-lg border border-slate-700/60 backdrop-blur-sm">
+                <Sparkles className="w-4 h-4 text-ui-gold-400 shrink-0" />
+                <span>HND & 3rd Class Bridge to M.Sc</span>
               </div>
             </div>
 
             <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
                 href="/apply"
-                className="bg-ui-gold-500 hover:bg-ui-gold-400 text-ui-navy-950 font-bold px-8 py-4 rounded-md text-base transition-all shadow-lg hover:shadow-xl text-center flex items-center justify-center gap-2"
+                className="bg-ui-gold-500 hover:bg-ui-gold-400 text-ui-navy-950 font-extrabold px-8 py-4 rounded-xl text-base transition-all shadow-xl hover:shadow-2xl text-center flex items-center justify-center gap-2"
               >
                 Apply For Admission <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/programs"
-                className="bg-ui-navy-900 hover:bg-ui-navy-800 border border-slate-700 text-white font-semibold px-7 py-4 rounded-md text-base transition-all text-center flex items-center justify-center gap-2"
+                className="bg-ui-navy-900/80 hover:bg-ui-navy-900 border border-slate-600 text-white font-bold px-7 py-4 rounded-xl text-base transition-all text-center flex items-center justify-center gap-2 backdrop-blur-md"
               >
                 <BookOpen className="w-5 h-5 text-ui-gold-400" />
                 Explore All Diplomas
               </Link>
             </div>
+
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="bg-ui-navy-900/90 border border-ui-gold-500/30 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-sm space-y-6">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-ui-gold-500/20 border border-ui-gold-400 flex items-center justify-center">
-                    <GraduationCap className="w-6 h-6 text-ui-gold-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-serif font-bold text-lg text-white">2024/2025 Admissions</h3>
-                    <p className="text-xs text-ui-gold-400 font-medium">Postgraduate & Executive Diplomas</p>
-                  </div>
-                </div>
-                <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-bold uppercase px-2.5 py-1 rounded-full">
-                  Applications Active
+          {/* Right Column - Carousel Info Badge & Media Navigator */}
+          <div className="lg:col-span-5 flex flex-col justify-end items-end space-y-4">
+
+            {/* Live Slide Caption Card */}
+            <div className="w-full bg-ui-navy-900/80 border border-ui-gold-500/40 rounded-2xl p-6 shadow-2xl backdrop-blur-md space-y-3">
+              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-ui-gold-400 bg-ui-gold-500/10 px-2.5 py-0.5 rounded-full border border-ui-gold-500/20">
+                  Campus Life & Facilities
+                </span>
+                <span className="text-xs font-mono font-bold text-slate-400">
+                  0{currentSlide + 1} / 0{ACADEMIC_IMAGES.hero.length}
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-ui-navy-950/80 p-4 rounded-xl border border-slate-800">
-                  <div className="text-2xl font-serif font-bold text-ui-gold-400">15,000+</div>
-                  <div className="text-xs text-slate-400">Alumni Graduates</div>
-                </div>
-                <div className="bg-ui-navy-950/80 p-4 rounded-xl border border-slate-800">
-                  <div className="text-2xl font-serif font-bold text-ui-gold-400">12 Months</div>
-                  <div className="text-xs text-slate-400">PGD Program Duration</div>
-                </div>
-                <div className="bg-ui-navy-950/80 p-4 rounded-xl border border-slate-800">
-                  <div className="text-2xl font-serif font-bold text-ui-gold-400">100%</div>
-                  <div className="text-xs text-slate-400">Verified Credentials</div>
-                </div>
-                <div className="bg-ui-navy-950/80 p-4 rounded-xl border border-slate-800">
-                  <div className="text-2xl font-serif font-bold text-ui-gold-400">5 Major</div>
-                  <div className="text-xs text-slate-400">Academic Faculties</div>
-                </div>
-              </div>
+              <h3 className="font-serif font-bold text-lg text-white leading-snug">
+                {ACADEMIC_IMAGES.hero[currentSlide].title}
+              </h3>
 
-              <div className="pt-2 border-t border-slate-800">
-                <Link
-                  href="/verify"
-                  className="w-full bg-slate-800/80 hover:bg-slate-800 text-slate-200 text-xs font-medium py-3 px-4 rounded-lg flex items-center justify-between border border-slate-700 transition-colors"
-                >
-                  <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
-                    Verify Admission or Diploma Certificate Online
-                  </span>
-                  <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
-                </Link>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                {ACADEMIC_IMAGES.hero[currentSlide].caption}
+              </p>
+
+              {/* Navigation Controls */}
+              <div className="pt-2 flex items-center justify-between border-t border-slate-800/80">
+                <div className="flex gap-1.5">
+                  {ACADEMIC_IMAGES.hero.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentSlide(idx)}
+                      className={`h-2 rounded-full transition-all ${
+                        idx === currentSlide ? "w-6 bg-ui-gold-400" : "w-2 bg-slate-600"
+                      }`}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={handlePrev}
+                    className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors"
+                    aria-label="Previous slide"
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                  </button>
+                  <button
+                    onClick={handleNext}
+                    className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors"
+                    aria-label="Next slide"
+                  >
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>

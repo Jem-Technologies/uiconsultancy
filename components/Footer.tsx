@@ -156,7 +156,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/fees" className="hover:text-ui-gold-300 transition-colors">
-                  Tuition Fee Calculator
+                  Tuition & Payment Policy
                 </Link>
               </li>
               <li>

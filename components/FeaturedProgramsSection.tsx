@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { PROGRAMS, DEPARTMENTS } from "@/data/programs";
-import { formatCurrency } from "@/lib/utils";
 import { 
   Clock, 
   ArrowRight, 
@@ -99,9 +98,9 @@ export const FeaturedProgramsSection: React.FC = () => {
 
               <div className="p-6 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Tuition / Session</span>
-                  <span className="text-base font-serif font-bold text-ui-navy-900">
-                    {formatCurrency(program.tuition)}
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Admissions</span>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-100/80 px-2.5 py-0.5 rounded-md inline-block mt-0.5">
+                    Applications Open
                   </span>
                 </div>
 
@@ -109,7 +108,7 @@ export const FeaturedProgramsSection: React.FC = () => {
                   href={`/programs/${program.id}`}
                   className="bg-ui-navy-900 hover:bg-ui-navy-950 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-all flex items-center gap-1.5 group-hover:bg-ui-gold-600 group-hover:text-ui-navy-950"
                 >
-                  <span>Details</span>
+                  <span>View Program Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

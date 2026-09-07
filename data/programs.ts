@@ -6,8 +6,6 @@ export interface Program {
   department: "Computing & IT" | "Management & Business" | "Public Administration" | "Environmental & Safety" | "Finance & Accounting";
   duration: string;
   mode: "Weekend / Blended" | "Online / Distance" | "Full-Time Executive";
-  tuition: number;
-  applicationFee: number;
   description: string;
   requirements: string[];
   careerProspects: string[];
@@ -24,8 +22,6 @@ export const PROGRAMS: Program[] = [
     department: "Computing & IT",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
-    tuition: 320000,
-    applicationFee: 15000,
     description: "Designed for graduates seeking transition into software development, cybersecurity, cloud architecture, and enterprise IT management.",
     requirements: [
       "B.Sc, B.Tech, or HND in any STEM field or relevant discipline from a recognized institution.",
@@ -57,8 +53,6 @@ export const PROGRAMS: Program[] = [
     department: "Management & Business",
     duration: "12 Months (2 Semesters)",
     mode: "Online / Distance",
-    tuition: 280000,
-    applicationFee: 15000,
     description: "Equips non-business degree holders and mid-level managers with core strategic leadership, financial management, and business analytics skills.",
     requirements: [
       "First Degree (B.Sc, B.A, B.Tech) or HND in any discipline.",
@@ -90,8 +84,6 @@ export const PROGRAMS: Program[] = [
     department: "Computing & IT",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
-    tuition: 310000,
-    applicationFee: 15000,
     description: "Focuses on quantitative research methods, statistical computing (R, SPSS, Python), data visualization, and predictive modeling for decision making.",
     requirements: [
       "B.Sc/HND in Statistics, Mathematics, Economics, Sciences, Engineering, or Social Sciences.",
@@ -121,8 +113,6 @@ export const PROGRAMS: Program[] = [
     department: "Public Administration",
     duration: "12 Months (2 Semesters)",
     mode: "Online / Distance",
-    tuition: 260000,
-    applicationFee: 15000,
     description: "Geared towards civil servants, NGO executives, and public sector officers aiming to master governance, public policy formulation, and administrative law.",
     requirements: [
       "Bachelor's degree or HND in any discipline from an accredited institution.",
@@ -151,8 +141,6 @@ export const PROGRAMS: Program[] = [
     department: "Environmental & Safety",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
-    tuition: 350000,
-    applicationFee: 15000,
     description: "Specialized post-graduate training aligned with international HSE standards for energy, manufacturing, construction, and corporate safety leaders.",
     requirements: [
       "B.Sc or HND in Engineering, Environmental Science, Biological Sciences, or related fields.",
@@ -182,8 +170,6 @@ export const PROGRAMS: Program[] = [
     department: "Management & Business",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
-    tuition: 240000,
-    applicationFee: 12000,
     description: "Practical project governance, Agile frameworks, scheduling, and risk mitigation methodologies aligned with global PMP/PMI standards.",
     requirements: [
       "ND, OND, Professional Diploma, or equivalent qualification.",
@@ -212,8 +198,6 @@ export const PROGRAMS: Program[] = [
     department: "Finance & Accounting",
     duration: "9 Months (2 Semesters)",
     mode: "Online / Distance",
-    tuition: 220000,
-    applicationFee: 10000,
     description: "Focuses on fraud investigation, internal control systems, forensic auditing, and modern corporate financial reporting.",
     requirements: [
       "Diploma, NCE, ND, or SSCE with relevant accounting work experience.",
