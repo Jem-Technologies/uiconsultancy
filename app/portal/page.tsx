@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { AnnouncementTicker } from "@/components/AnnouncementTicker";
-import { formatCurrency } from "@/lib/utils";
 import { 
   BookOpen, 
   CreditCard, 
@@ -230,10 +229,10 @@ export default function PortalPage() {
                   </div>
 
                   <div className="grid grid-cols-2 gap-2">
-                    <div><span className="text-slate-500">Amount Paid:</span> <strong className="text-ui-navy-900">{formatCurrency(365000)}</strong></div>
+                    <div><span className="text-slate-500">Tuition Status:</span> <strong className="text-emerald-700">Cleared / Session Paid</strong></div>
                     <div><span className="text-slate-500">Payment Gateway:</span> <strong className="text-slate-800">UI Consultancy Direct Remita</strong></div>
                     <div><span className="text-slate-500">Payment Date:</span> <strong className="text-slate-800">12 October 2024</strong></div>
-                    <div><span className="text-slate-500">Outstanding Balance:</span> <strong className="text-emerald-700">NGN 0.00</strong></div>
+                    <div><span className="text-slate-500">Outstanding Balance:</span> <strong className="text-emerald-700">Cleared</strong></div>
                   </div>
 
                   <button

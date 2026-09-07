@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PROGRAMS } from "@/data/programs";
-import { generateRefNumber, formatCurrency } from "@/lib/utils";
+import { generateRefNumber } from "@/lib/utils";
 import { 
   UploadCloud, 
   CheckCircle2, 
@@ -164,7 +164,7 @@ function ApplyFormContent() {
                 <div><span className="text-slate-500">Phone:</span> <strong className="text-slate-800">{formData.phone}</strong></div>
                 <div><span className="text-slate-500">Program Choice:</span> <strong className="text-ui-navy-900">{selectedProgramObj.title}</strong></div>
                 <div><span className="text-slate-500">Qualification:</span> <strong className="text-slate-800">{formData.highestQualification} ({formData.gradeClass})</strong></div>
-                <div><span className="text-slate-500">Application Fee:</span> <strong className="text-ui-gold-700">{formatCurrency(selectedProgramObj.applicationFee)}</strong></div>
+                <div><span className="text-slate-500">Application Status:</span> <strong className="text-emerald-700">Submitted / Pending Review</strong></div>
               </div>
             </div>
 
@@ -388,7 +388,7 @@ function ApplyFormContent() {
                       >
                         {PROGRAMS.map((p) => (
                           <option key={p.id} value={p.id}>
-                            [{p.level}] {p.title} ({p.code}) — {formatCurrency(p.tuition)}
+                            [{p.level}] {p.title} ({p.code})
                           </option>
                         ))}
                       </select>
@@ -399,7 +399,7 @@ function ApplyFormContent() {
                       <p className="text-[11px] text-slate-300">{selectedProgramObj.description}</p>
                       <div className="pt-2 border-t border-slate-800 flex justify-between text-[11px]">
                         <span>Duration: <strong>{selectedProgramObj.duration}</strong></span>
-                        <span>Application Fee: <strong>{formatCurrency(selectedProgramObj.applicationFee)}</strong></span>
+                        <span>Delivery Mode: <strong>{selectedProgramObj.mode}</strong></span>
                       </div>
                     </div>
 
@@ -515,7 +515,7 @@ function ApplyFormContent() {
                       <div><span className="text-slate-500">Program Choice:</span> <strong className="text-ui-navy-900 block">{selectedProgramObj.title}</strong></div>
                       <div><span className="text-slate-500">Study Mode:</span> <strong className="text-slate-800 block">{formData.studyMode}</strong></div>
                       <div><span className="text-slate-500">Highest Qualification:</span> <strong className="text-slate-800 block">{formData.highestQualification} ({formData.gradeClass})</strong></div>
-                      <div><span className="text-slate-500">Application Form Fee:</span> <strong className="text-ui-gold-700 block">{formatCurrency(selectedProgramObj.applicationFee)}</strong></div>
+                      <div><span className="text-slate-500">Admissions Desk:</span> <strong className="text-emerald-700 block">Verified & Open</strong></div>
                     </div>
                   </div>
 

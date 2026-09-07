@@ -6,7 +6,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { AnnouncementTicker } from "@/components/AnnouncementTicker";
 import { PROGRAMS, DEPARTMENTS } from "@/data/programs";
-import { formatCurrency } from "@/lib/utils";
 import { 
   Search, 
   Clock, 
@@ -175,9 +174,9 @@ export default function ProgramsPage() {
 
                 <div className="p-6 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
                   <div>
-                    <span className="text-[10px] uppercase font-bold text-slate-400 block">Tuition Fee</span>
-                    <span className="text-base font-serif font-bold text-ui-navy-900">
-                      {formatCurrency(program.tuition)}
+                    <span className="text-[10px] uppercase font-bold text-slate-400 block">Admissions</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded border border-emerald-200 inline-block mt-0.5">
+                      Applications Active
                     </span>
                   </div>
 
@@ -186,8 +185,8 @@ export default function ProgramsPage() {
                       href={`/programs/${program.id}`}
                       className="bg-ui-navy-900 hover:bg-ui-navy-950 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-all flex items-center gap-1"
                     >
-                      <span>Overview</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
+                      <span>Program Details</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-ui-gold-400" />
                     </Link>
                   </div>
                 </div>

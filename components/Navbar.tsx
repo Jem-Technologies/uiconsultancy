@@ -39,29 +39,33 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm font-sans">
-      {/* Top Banner Notice */}
-      <div className="bg-ui-navy-900 text-white text-xs py-2 px-4 border-b border-ui-gold-600/30">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-2">
-            <span className="bg-ui-gold-600 text-ui-navy-950 font-bold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">
-              Admissions Open
+      {/* Top Portal & Access Bar */}
+      <div className="bg-ui-navy-950 text-white text-xs py-2 px-4 border-b border-ui-gold-500/30">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+          <div className="flex items-center gap-3 overflow-x-auto no-scrollbar py-0.5">
+            <span className="bg-ui-gold-500 text-ui-navy-950 font-extrabold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider shrink-0">
+              PORTAL SYSTEM
             </span>
-            <span className="text-slate-200 font-medium">
-              2024/2025 Postgraduate & Higher Diploma Applications Ongoing.
-            </span>
-            <Link href="/apply" className="underline text-ui-gold-300 font-semibold hover:text-white transition-colors">
-              Apply Now &rarr;
+            <Link href="/portal" className="text-slate-200 hover:text-ui-gold-300 font-semibold transition-colors flex items-center gap-1 shrink-0">
+              <GraduationCap className="w-3.5 h-3.5 text-ui-gold-400" /> Student Login
+            </Link>
+            <span className="text-slate-600">|</span>
+            <Link href="/apply" className="text-slate-200 hover:text-ui-gold-300 font-semibold transition-colors flex items-center gap-1 shrink-0">
+              <FileText className="w-3.5 h-3.5 text-ui-gold-400" /> Applicant Portal & Registration
+            </Link>
+            <span className="text-slate-600">|</span>
+            <Link href="/verify" className="text-slate-200 hover:text-ui-gold-300 font-semibold transition-colors flex items-center gap-1 shrink-0">
+              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" /> Credential Verification
             </Link>
           </div>
-          <div className="hidden lg:flex items-center gap-6 text-slate-300">
-            <span className="flex items-center gap-1.5">
+
+          <div className="hidden lg:flex items-center gap-4 text-slate-300 text-[11px]">
+            <span className="flex items-center gap-1">
               <PhoneCall className="w-3.5 h-3.5 text-ui-gold-400" />
-              +234 (0) 803 123 4567 | +234 (0) 2 810 3000
+              Admissions Desk: +234 (0) 803 123 4567
             </span>
-            <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" />
-              University of Ibadan Campus, Oyo State
-            </span>
+            <span className="text-slate-700">|</span>
+            <span className="text-ui-gold-300 font-medium">Session 2024/2025</span>
           </div>
         </div>
       </div>

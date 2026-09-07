@@ -14,26 +14,26 @@ export const AdmissionsPathwaySection: React.FC = () => {
   const steps = [
     {
       step: "01",
-      title: "Online Application Submission",
-      description: "Fill out the online application form with personal bio-data, academic qualifications (SSCE, OND/HND/B.Sc), and program choice.",
+      title: "Simple Application Form",
+      description: "Fill out our straightforward online form with your basic personal details, educational background (SSCE, OND, HND, or B.Sc), and preferred study program.",
       icon: FileCheck
     },
     {
       step: "02",
-      title: "Application Fee Payment",
-      description: "Pay the non-refundable N15,000 application processing fee securely via Card or direct Bank Transfer.",
+      title: "Flexible Registration",
+      description: "Submit your details without stress. Our friendly admissions advisors review your background and guide you every step of the way.",
       icon: CreditCard
     },
     {
       step: "03",
-      title: "Document & Transcript Verification",
-      description: "Upload scanned copies of O'Level results, Degree/HND certificates, and NYSC discharge or exemption letter for board review.",
+      title: "Upload Your Documents",
+      description: "Easily upload clear scanned copies or photos of your certificates, statement of results, or O'Level credits from your phone or computer.",
       icon: UserCheck
     },
     {
       step: "04",
-      title: "Admission Letter & Portal Access",
-      description: "Receive your official University of Ibadan Consultancy provisional admission letter and activate your student portal.",
+      title: "Get Admitted & Start Learning",
+      description: "Receive your official University of Ibadan Consultancy admission confirmation letter and join your online or weekend lectures with full confidence.",
       icon: GraduationCap
     }
   ];

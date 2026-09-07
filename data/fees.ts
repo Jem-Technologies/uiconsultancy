@@ -1,78 +1,57 @@
-export interface FeeItem {
+export interface FeeGuideline {
   category: string;
-  amount: number;
   description: string;
-  isMandatory: boolean;
 }
 
-export interface ProgramFeeStructure {
+export interface ProgramFeeGuideline {
   programId: string;
   programTitle: string;
-  applicationForm: number;
-  acceptanceFee: number;
-  tuitionPerSemester: number;
-  totalSemesters: number;
-  breakdown: FeeItem[];
+  breakdown: FeeGuideline[];
   paymentOptions: {
-    lumpSumDiscount: number;
+    lumpSumDiscount: string;
     installmentPlan: string;
   };
 }
 
-export const FEE_STRUCTURES: ProgramFeeStructure[] = [
+export const FEE_GUIDELINES: ProgramFeeGuideline[] = [
   {
     programId: "pgd-computer-science",
     programTitle: "Postgraduate Diploma in Computer Science & Information Technology",
-    applicationForm: 15000,
-    acceptanceFee: 30000,
-    tuitionPerSemester: 160000,
-    totalSemesters: 2,
     breakdown: [
-      { category: "Tuition Fee (Per Semester)", amount: 160000, description: "Core academic instruction and practical lab sessions", isMandatory: true },
-      { category: "Acceptance & Registration Fee", amount: 30000, description: "One-off administrative processing and ID card generation", isMandatory: true },
-      { category: "E-Library & Resource Access", amount: 15000, description: "Annual access to UI E-Library, digital journals, and software labs", isMandatory: true },
-      { category: "Laboratory & Computing Facility", amount: 20000, description: "Server usage, cloud sandboxes, and hands-on practical materials", isMandatory: true },
-      { category: "Examination & Assessment Fee", amount: 10000, description: "Semester examination processing and transcript processing", isMandatory: true }
+      { category: "Tuition Fee", description: "Covers core academic instruction, cloud laboratory sandboxes, and practical computing sessions." },
+      { category: "Acceptance & Portal Registration", description: "One-off administrative setup, matriculation processing, and digital ID card generation." },
+      { category: "E-Library & Digital Resources", description: "Annual access to University of Ibadan E-Library databases and digital research journals." },
+      { category: "Examination & Assessment", description: "Semester continuous assessments, project defense, and transcript processing." }
     ],
     paymentOptions: {
-      lumpSumDiscount: 5,
-      installmentPlan: "Option to pay 60% at commencement of Semester 1 and 40% before Semester 2 examinations."
+      lumpSumDiscount: "5% discount on full session payment made at registration.",
+      installmentPlan: "Flexible 2-stage installment option available per academic semester."
     }
   },
   {
     programId: "pgd-business-management",
     programTitle: "Postgraduate Diploma in Business Management & Administration",
-    applicationForm: 15000,
-    acceptanceFee: 30000,
-    tuitionPerSemester: 140000,
-    totalSemesters: 2,
     breakdown: [
-      { category: "Tuition Fee (Per Semester)", amount: 140000, description: "Online lectures, case studies, and faculty mentoring", isMandatory: true },
-      { category: "Acceptance & Portal Registration", amount: 30000, description: "Student portal activation and matriculation pack", isMandatory: true },
-      { category: "Management Executive Case Studies Pack", amount: 15000, description: "Harvard & UI Business School case study licenses", isMandatory: true },
-      { category: "Examination Fee", amount: 10000, description: "Continuous assessments and final semester exams", isMandatory: true }
+      { category: "Tuition Fee", description: "Covers virtual/in-person lectures, Harvard & UI Business School executive case study packs." },
+      { category: "Acceptance & Portal Registration", description: "Official student activation and matriculation pack." },
+      { category: "Examination & Assessment", description: "Continuous assessment and final semester examinations." }
     ],
     paymentOptions: {
-      lumpSumDiscount: 5,
-      installmentPlan: "2-Part installment available per semester."
+      lumpSumDiscount: "5% discount on full upfront payment.",
+      installmentPlan: "2-part installment available per semester."
     }
   },
   {
     programId: "pgd-safety-environment",
     programTitle: "Postgraduate Diploma in Occupational Health, Safety & Environmental Management",
-    applicationForm: 15000,
-    acceptanceFee: 35000,
-    tuitionPerSemester: 175000,
-    totalSemesters: 2,
     breakdown: [
-      { category: "Tuition Fee (Per Semester)", amount: 175000, description: "Lectures, field safety audits, and industrial case studies", isMandatory: true },
-      { category: "Acceptance & Registration", amount: 35000, description: "Official matriculation credentials and HSE toolkits", isMandatory: true },
-      { category: "Field Audit & Safety Equipment", amount: 25000, description: "On-site industrial field visits, PPE safety gear, and practical kit", isMandatory: true },
-      { category: "Examination & Project Defense", amount: 15000, description: "Oral thesis defense and external assessor evaluation", isMandatory: true }
+      { category: "Tuition Fee", description: "Covers lectures, HSE legislation toolkits, and industrial site visits." },
+      { category: "Acceptance & Registration", description: "Matriculation credentials and safety gear kit." },
+      { category: "Field Audit & Safety Equipment", description: "On-site practical field inspection and PPE safety gear." }
     ],
     paymentOptions: {
-      lumpSumDiscount: 5,
-      installmentPlan: "Semester-wise payment with 50% upfront for course registration."
+      lumpSumDiscount: "5% discount on early full payment.",
+      installmentPlan: "Semester-wise installment plan with 50% initial deposit."
     }
   }
 ];
