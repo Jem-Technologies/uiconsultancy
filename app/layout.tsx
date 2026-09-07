@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "University of Ibadan Consultancy Services Unit",
     description: "Senate Accredited Postgraduate Diplomas & Higher Executive Diplomas.",
-    url: "https://uiconsultancy.edu.ng",
+    url: "https://uiconsultancy.org",
     siteName: "University of Ibadan Consultancy Services Unit",
     locale: "en_NG",
     type: "website",
@@ -33,8 +33,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "University of Ibadan Consultancy Services Unit",
-    "url": "https://uiconsultancy.edu.ng",
-    "logo": "https://uiconsultancy.edu.ng/logo.png",
+    "url": "https://uiconsultancy.org",
+    "logo": "https://uiconsultancy.org/logo.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Commercial Avenue, University of Ibadan Campus",
@@ -50,6 +50,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
