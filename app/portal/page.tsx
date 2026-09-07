@@ -13,7 +13,14 @@ import {
 } from "lucide-react";
 
 export default function PortalPage() {
+  const [portalType, setPortalType] = useState<"student" | "applicant" | "staff" | "verify">("student");
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [activeTab, setActiveTab] = useState<"courses" | "results" | "fees" | "timetable">("courses");
+
+  const [loginForm, setLoginForm] = useState({
+    username: "",
+    password: ""
+  });
 
   const student = {
     name: "BABATUNDE, Oluwaseun Emmanuel",

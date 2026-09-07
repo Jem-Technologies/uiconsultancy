@@ -4,7 +4,7 @@ test.describe("UI Consultancy Web Portal Workflows", () => {
   test("Homepage loads with branding, hero CTA, and featured programs", async ({ page }) => {
     await page.goto("http://localhost:3000/");
     await expect(page).toHaveTitle(/University of Ibadan Consultancy Services Unit/);
-    await expect(page.locator("h1")).toContainText("Premier Postgraduate & Higher Diplomas");
+    await expect(page.locator("h1")).toContainText("Your Pathway To A");
   });
 
   test("Programs catalog displays search and department filtering", async ({ page }) => {
@@ -19,7 +19,7 @@ test.describe("UI Consultancy Web Portal Workflows", () => {
 
   test("Fee Calculator estimates tuition and installment schedules", async ({ page }) => {
     await page.goto("http://localhost:3000/fees");
-    await expect(page.locator("text=Interactive Tuition & Fee Calculator")).toBeVisible();
+    await expect(page.locator("text=Flexible Financial Payment Options")).toBeVisible();
     await expect(page.locator("text=First Bank of Nigeria PLC").first()).toBeVisible();
   });
 
