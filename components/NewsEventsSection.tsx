@@ -56,7 +56,7 @@ export const NewsEventsSection: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-ui-gold-600" />
                 <h2 className="font-serif text-2xl font-bold text-ui-navy-900">
-                  2024/2025 Session Schedule
+                  2026/2027 Session Schedule
                 </h2>
               </div>
             </div>

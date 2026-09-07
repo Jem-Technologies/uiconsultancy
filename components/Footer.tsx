@@ -85,11 +85,11 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>+234 (0) 803 123 4567 / +234 (0) 802 987 6543</span>
+                <span>0705 947 6180</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>info@uiconsultancy.edu.ng | admissions@uiconsultancy.edu.ng</span>
+                <span>info@uiconsultancy.org</span>
               </div>
             </div>
           </div>
@@ -133,40 +133,40 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 3: Student & Portal Links */}
+          {/* Col 3: Navigation Links */}
           <div className="space-y-3">
             <h5 className="font-serif font-semibold text-white text-base border-b border-ui-navy-800 pb-2">
-              Quick Portals
+              Quick Links
             </h5>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <Link href="/apply" className="hover:text-ui-gold-300 transition-colors">
-                  Online Admission Portal
+                <Link href="/" className="hover:text-ui-gold-300 transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/programs" className="hover:text-ui-gold-300 transition-colors">
+                  Programs
+                </Link>
+              </li>
+              <li>
+                <Link href="/gallery" className="hover:text-ui-gold-300 transition-colors">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-ui-gold-300 transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-ui-gold-300 transition-colors">
+                  Contact Us
                 </Link>
               </li>
               <li>
                 <Link href="/portal" className="hover:text-ui-gold-300 transition-colors">
-                  Student Portal Login
-                </Link>
-              </li>
-              <li>
-                <Link href="/verify" className="hover:text-ui-gold-300 transition-colors">
-                  Certificate Verification
-                </Link>
-              </li>
-              <li>
-                <Link href="/fees" className="hover:text-ui-gold-300 transition-colors">
-                  Tuition & Payment Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/admissions" className="hover:text-ui-gold-300 transition-colors">
-                  Entry Requirements
-                </Link>
-              </li>
-              <li>
-                <Link href="/faqs" className="hover:text-ui-gold-300 transition-colors">
-                  Frequently Asked Questions
+                  Portal Login
                 </Link>
               </li>
             </ul>

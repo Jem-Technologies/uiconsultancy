@@ -140,7 +140,7 @@ export default function FeesPage() {
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-800 text-xs">
             <div className="flex items-center gap-2 text-slate-300">
               <HelpCircle className="w-4 h-4 text-ui-gold-400 shrink-0" />
-              <span>Need payment assistance or employer invoicing? Contact Bursary Desk: <strong>bursary@uiconsultancy.edu.ng</strong></span>
+              <span>Need payment assistance or employer invoicing? Contact Bursary Desk: <strong>info@uiconsultancy.org | 0705 947 6180</strong></span>
             </div>
             <Link
               href="/portal"

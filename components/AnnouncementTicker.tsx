@@ -13,7 +13,7 @@ export const AnnouncementTicker: React.FC = () => {
           <span>Latest Announcement:</span>
         </div>
         <div className="truncate text-slate-700">
-          <span className="font-semibold text-ui-navy-900">2024/2025 Academic Session:</span> First batch admission list for Postgraduate Diploma (Computer Science, Business Admin, HSE) released. Deadline for acceptance fee payment is Nov 30.
+          <span className="font-semibold text-ui-navy-900">2026/2027 Academic Session:</span> First batch admission list for Postgraduate Diploma (Computer Science, Business Admin, HSE) released. Deadline for acceptance fee payment is Nov 30, 2026.
         </div>
         <Link
           href="/admissions"

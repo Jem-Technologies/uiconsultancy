@@ -16,7 +16,7 @@ export const CallToActionBanner: React.FC = () => {
             </div>
             
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">
-              Download the 2024/2025 Academic Prospectus & Handbook
+              Download the 2026/2027 Academic Prospectus & Handbook
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">

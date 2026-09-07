@@ -24,11 +24,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Programs", href: "/programs" },
-    { name: "Admissions", href: "/admissions" },
-    { name: "Tuition & Fees", href: "/fees" },
-    { name: "Student Portal", href: "/portal" },
-    { name: "Verification", href: "/verify" },
+    { name: "Gallery", href: "/gallery" },
     { name: "About Us", href: "/about" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const isActive = (path: string) => {
@@ -39,48 +37,30 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm font-sans">
-      {/* Top Portal & Access Bar */}
-      <div className="bg-ui-navy-950 text-white text-xs py-2.5 px-4 border-b border-ui-gold-500/40 shadow-inner">
+      {/* Top Info Bar */}
+      <div className="bg-ui-navy-950 text-white text-xs py-2 px-4 border-b border-ui-gold-500/40 shadow-inner">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-0.5 w-full md:w-auto">
-            <span className="bg-ui-gold-500 text-ui-navy-950 font-extrabold px-2.5 py-0.5 rounded text-[10px] uppercase tracking-wider shrink-0 flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-ui-navy-950 animate-pulse"></span>
-              PORTAL HUB
+          <div className="flex items-center gap-4 text-slate-300 text-[11px]">
+            <span className="flex items-center gap-1.5">
+              <PhoneCall className="w-3.5 h-3.5 text-ui-gold-400" />
+              Admissions Helpline: <strong className="text-white">0705 947 6180</strong>
             </span>
-            <Link
-              href="/portal?tab=student"
-              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
-            >
-              <GraduationCap className="w-3.5 h-3.5 text-ui-gold-400" /> Student Portal
-            </Link>
-            <Link
-              href="/portal?tab=applicant"
-              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
-            >
-              <FileText className="w-3.5 h-3.5 text-ui-gold-400" /> Applicant Portal & Registration
-            </Link>
-            <Link
-              href="/portal?tab=staff"
-              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" /> Staff & Lecturer Portal
-            </Link>
-            <Link
-              href="/verify"
-              className="text-slate-100 hover:text-ui-gold-300 bg-ui-navy-900/80 hover:bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700/80 font-medium transition-all flex items-center gap-1.5 shrink-0 text-[11px]"
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> Verification
-            </Link>
+            <span className="hidden sm:inline text-slate-600">|</span>
+            <span className="hidden sm:flex items-center gap-1.5">
+              Email: <strong className="text-white">info@uiconsultancy.org</strong>
+            </span>
           </div>
 
-          <div className="hidden lg:flex items-center gap-4 text-slate-300 text-[11px]">
-            <span className="flex items-center gap-1.5 bg-ui-navy-900/50 px-2.5 py-1 rounded border border-slate-800">
-              <PhoneCall className="w-3.5 h-3.5 text-ui-gold-400" />
-              Admissions Helpline: <strong className="text-white">+234 (0) 803 123 4567</strong>
+          <div className="flex items-center gap-3 text-slate-300 text-[11px]">
+            <span className="text-ui-gold-300 font-semibold bg-ui-gold-500/10 px-2.5 py-0.5 rounded border border-ui-gold-500/20">
+              Academic Session 2026/2027
             </span>
-            <span className="text-ui-gold-300 font-semibold bg-ui-gold-500/10 px-2 py-0.5 rounded border border-ui-gold-500/20">
-              Academic Session 2024/2025
-            </span>
+            <Link
+              href="/portal"
+              className="text-ui-gold-300 hover:text-white bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700 font-medium transition-all flex items-center gap-1 shrink-0 text-[11px]"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" /> Portal Login
+            </Link>
           </div>
         </div>
       </div>
@@ -141,11 +121,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             )}
 
             <Link
-              href="/apply"
+              href="/portal"
               className="bg-ui-navy-900 hover:bg-ui-navy-950 text-white font-semibold text-sm px-5 py-2.5 rounded-md shadow-md transition-all border border-ui-gold-500/40 flex items-center gap-2 hover:shadow-lg"
             >
-              <FileText className="w-4 h-4 text-ui-gold-400" />
-              Apply Online
+              <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
+              Portal Login
             </Link>
           </div>
 
@@ -194,12 +174,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
 
           <div className="pt-4 border-t border-slate-200 space-y-2">
             <Link
-              href="/apply"
+              href="/portal"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center bg-ui-navy-900 text-white font-semibold py-3 rounded-md shadow flex items-center justify-center gap-2"
+              className="w-full text-center bg-ui-navy-900 text-white font-semibold py-3 rounded-md shadow flex items-center justify-center gap-2 text-sm font-bold"
             >
-              <FileText className="w-4 h-4 text-ui-gold-400" />
-              Start Online Admission Application
+              <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
+              Portal Login
             </Link>
           </div>
         </div>

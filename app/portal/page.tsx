@@ -9,25 +9,40 @@ import {
   CreditCard, 
   Calendar, 
   Award, 
-  Download
+  Download,
+  Lock,
+  User,
+  LogOut,
+  ShieldCheck,
+  AlertCircle
 } from "lucide-react";
 
 export default function PortalPage() {
-  const [portalType, setPortalType] = useState<"student" | "applicant" | "staff" | "verify">("student");
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeTab, setActiveTab] = useState<"courses" | "results" | "fees" | "timetable">("courses");
 
   const [loginForm, setLoginForm] = useState({
-    username: "",
+    identifier: "",
     password: ""
   });
+  const [loginError, setLoginError] = useState("");
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!loginForm.identifier.trim() || !loginForm.password.trim()) {
+      setLoginError("Please enter your email or matriculation number and password.");
+      return;
+    }
+    setLoginError("");
+    setIsLoggedIn(true);
+  };
 
   const student = {
     name: "BABATUNDE, Oluwaseun Emmanuel",
-    matricNo: "UIC/PGD/CSIT/2024/0142",
+    matricNo: "UIC/PGD/CSIT/2026/0142",
     program: "Postgraduate Diploma in Computer Science & IT",
     department: "Computing & IT Consultancy",
-    level: "1st Semester (2024/2025 Session)",
+    level: "1st Semester (2026/2027 Session)",
     cgpa: "4.80 / 5.00",
     status: "Active & Fully Registered"
   };
@@ -51,28 +66,112 @@ export default function PortalPage() {
       <Navbar />
       <AnnouncementTicker />
 
-      <section className="bg-ui-navy-950 text-white py-12 px-4 sm:px-6 lg:px-8 border-b-4 border-ui-gold-500 relative">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 bg-ui-gold-500/10 text-ui-gold-300 border border-ui-gold-500/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-              Executive Student Management Portal
+      {!isLoggedIn ? (
+        /* Auth Gate Login Screen */
+        <main className="flex-grow flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 bg-slate-100">
+          <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+            <div className="text-center space-y-3">
+              <div className="w-16 h-16 rounded-full bg-ui-navy-950 border-2 border-ui-gold-500 flex items-center justify-center mx-auto shadow-md">
+                <Lock className="w-8 h-8 text-ui-gold-400" />
+              </div>
+              <h2 className="font-serif text-2xl font-bold text-ui-navy-950">
+                Portal Authentication Gate
+              </h2>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Log in with your official <strong>Email Address or Matriculation / Form Number</strong> and password to access student records, course registration, and administrative services.
+              </p>
             </div>
-            <h1 className="font-serif text-3xl font-bold text-white">
-              Student E-Portal Dashboard
-            </h1>
-            <p className="text-slate-300 text-xs sm:text-sm">
-              Welcome back, <strong className="text-ui-gold-300">{student.name}</strong>
-            </p>
-          </div>
 
-          <div className="bg-ui-navy-900 border border-slate-700 p-4 rounded-xl text-xs space-y-1">
-            <div className="text-slate-400 uppercase font-bold text-[10px]">Matriculation Number</div>
-            <div className="font-mono font-bold text-ui-gold-400 text-sm">{student.matricNo}</div>
-          </div>
-        </div>
-      </section>
+            {loginError && (
+              <div className="p-3 bg-red-50 border border-red-200 rounded-lg flex items-center gap-2 text-xs text-red-700">
+                <AlertCircle className="w-4 h-4 text-red-500 shrink-0" />
+                <span>{loginError}</span>
+              </div>
+            )}
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow w-full space-y-8">
+            <form onSubmit={handleLogin} className="space-y-5 text-xs">
+              <div className="space-y-1">
+                <label className="block font-bold text-slate-700 uppercase tracking-wider text-[11px]">
+                  Email or Matriculation / Form No.
+                </label>
+                <div className="relative">
+                  <User className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. info@uiconsultancy.org or UIC/PGD/2026/0142"
+                    value={loginForm.identifier}
+                    onChange={(e) => setLoginForm({ ...loginForm, identifier: e.target.value })}
+                    className="w-full pl-9 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-ui-navy-900 font-medium"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <label className="block font-bold text-slate-700 uppercase tracking-wider text-[11px]">
+                  Password
+                </label>
+                <div className="relative">
+                  <Lock className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                  <input
+                    type="password"
+                    required
+                    placeholder="••••••••••••"
+                    value={loginForm.password}
+                    onChange={(e) => setLoginForm({ ...loginForm, password: e.target.value })}
+                    className="w-full pl-9 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-ui-navy-900 font-medium"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-ui-navy-900 hover:bg-ui-navy-950 text-white font-bold py-3.5 rounded-xl text-xs transition-all shadow-md flex items-center justify-center gap-2"
+              >
+                <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
+                Sign In to Portal
+              </button>
+            </form>
+
+            <div className="border-t border-slate-200 pt-4 text-center text-[11px] text-slate-500 space-y-1">
+              <p>Demo Login Hint: Enter any email/matric and password to enter demo dashboard.</p>
+              <p>Technical Assistance: <strong className="text-slate-800">info@uiconsultancy.org | 0705 947 6180</strong></p>
+            </div>
+          </div>
+        </main>
+      ) : (
+        /* Logged In Dashboard */
+        <>
+          <section className="bg-ui-navy-950 text-white py-12 px-4 sm:px-6 lg:px-8 border-b-4 border-ui-gold-500 relative">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 bg-ui-gold-500/10 text-ui-gold-300 border border-ui-gold-500/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                  Executive Student Management Portal
+                </div>
+                <h1 className="font-serif text-3xl font-bold text-white">
+                  Student E-Portal Dashboard
+                </h1>
+                <p className="text-slate-300 text-xs sm:text-sm">
+                  Welcome back, <strong className="text-ui-gold-300">{student.name}</strong>
+                </p>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-ui-navy-900 border border-slate-700 p-4 rounded-xl text-xs space-y-1">
+                  <div className="text-slate-400 uppercase font-bold text-[10px]">Matriculation Number</div>
+                  <div className="font-mono font-bold text-ui-gold-400 text-sm">{student.matricNo}</div>
+                </div>
+                <button
+                  onClick={() => setIsLoggedIn(false)}
+                  className="bg-red-600/90 hover:bg-red-700 text-white font-bold px-4 py-3 rounded-xl text-xs flex items-center gap-1.5 shadow transition-all shrink-0"
+                >
+                  <LogOut className="w-4 h-4" /> Log Out
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow w-full space-y-8">
         
         <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-6 sm:p-8 grid grid-cols-1 md:grid-cols-4 gap-6 text-xs text-slate-700">
           <div className="space-y-1">
@@ -227,8 +326,8 @@ export default function PortalPage() {
                 <div className="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-4 text-xs">
                   <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                     <div>
-                      <span className="font-bold text-ui-navy-900 block">2024/2025 Session Full Tuition & Acceptance Fee</span>
-                      <span className="text-[11px] text-slate-500 font-mono">Receipt No: UIC-RCT-2024-991204</span>
+                      <span className="font-bold text-ui-navy-900 block">2026/2027 Session Full Tuition & Acceptance Fee</span>
+                      <span className="text-[11px] text-slate-500 font-mono">Receipt No: UIC-RCT-2026-991204</span>
                     </div>
                     <span className="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded">
                       SUCCESSFUL PAYMENT
@@ -238,7 +337,7 @@ export default function PortalPage() {
                   <div className="grid grid-cols-2 gap-2">
                     <div><span className="text-slate-500">Tuition Status:</span> <strong className="text-emerald-700">Cleared / Session Paid</strong></div>
                     <div><span className="text-slate-500">Payment Gateway:</span> <strong className="text-slate-800">UI Consultancy Direct Remita</strong></div>
-                    <div><span className="text-slate-500">Payment Date:</span> <strong className="text-slate-800">12 October 2024</strong></div>
+                    <div><span className="text-slate-500">Payment Date:</span> <strong className="text-slate-800">12 October 2026</strong></div>
                     <div><span className="text-slate-500">Outstanding Balance:</span> <strong className="text-emerald-700">Cleared</strong></div>
                   </div>
 
@@ -286,7 +385,9 @@ export default function PortalPage() {
           </div>
         </div>
 
-      </main>
+          </main>
+        </>
+      )}
 
       <Footer />
     </div>
