@@ -197,7 +197,7 @@ export default function ProgramDetailPage() {
             <div className="bg-ui-navy-900 text-white rounded-2xl p-8 border-2 border-ui-gold-500 shadow-xl space-y-6 sticky top-28">
               <div className="text-center space-y-2 border-b border-slate-800 pb-6">
                 <span className="bg-ui-gold-500 text-ui-navy-950 text-[10px] font-bold uppercase px-3 py-1 rounded-full">
-                  2024/2025 Admissions
+                  2026/2027 Admissions
                 </span>
                 <h3 className="font-serif font-bold text-2xl text-white">Apply For This Program</h3>
                 <p className="text-xs text-slate-300">
@@ -229,7 +229,7 @@ export default function ProgramDetailPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                  <span>Classes starting Dec 2024</span>
+                  <span>Classes starting Nov 2026</span>
                 </div>
               </div>
             </div>

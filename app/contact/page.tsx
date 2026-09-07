@@ -63,16 +63,16 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-ui-gold-400 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="block text-white">Admissions & Helpdesk Lines</strong>
-                    <span>+234 (0) 803 123 4567 / +234 (0) 802 987 6543</span>
+                    <strong className="block text-white">Admissions & Helpdesk Line</strong>
+                    <span>0705 947 6180</span>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-ui-gold-400 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="block text-white">Official Email Helpdesks</strong>
-                    <span>admissions@uiconsultancy.edu.ng | info@uiconsultancy.edu.ng</span>
+                    <strong className="block text-white">Official Email Helpdesk</strong>
+                    <span>info@uiconsultancy.org</span>
                   </div>
                 </div>
 

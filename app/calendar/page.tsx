@@ -19,7 +19,7 @@ export default function CalendarPage() {
             Academic Schedule
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white">
-            2024/2025 Academic Calendar & Key Dates
+            2026/2027 Academic Calendar & Key Dates
           </h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
             Stay informed on application deadlines, orientation, lecture timetables, semester examination schedules, and convocation dates.
