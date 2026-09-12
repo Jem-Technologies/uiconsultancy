@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
               Ready to Upgrade Your Academic & Career Qualifications?
             </h3>
             <p className="text-slate-300 text-sm">
-              Join thousands of professionals transformed through University of Ibadan Postgraduate Diplomas.
+              Join thousands of professionals transformed through University of Ibadan Executive Diplomas.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed pr-4">
-              Established under the authority of the University Senate, the UI Consultancy Services Unit delivers top-tier postgraduate diplomas, higher diplomas, and professional development programs to bridge academic and industry leadership.
+              Established under the authority of the University Senate, the UI Consultancy Services Unit delivers top-tier executive diplomas, higher diplomas, and professional development programs to bridge academic and industry leadership.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">
@@ -102,22 +102,22 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <Link href="/programs/pgd-computer-science" className="hover:text-ui-gold-300 transition-colors">
-                  PGD Computer Science & IT
+                  Diploma in Computer Science & IT
                 </Link>
               </li>
               <li>
                 <Link href="/programs/pgd-business-management" className="hover:text-ui-gold-300 transition-colors">
-                  PGD Business Management
+                  Diploma in Business Management
                 </Link>
               </li>
               <li>
                 <Link href="/programs/pgd-applied-statistics" className="hover:text-ui-gold-300 transition-colors">
-                  PGD Applied Statistics & Data
+                  Diploma in Applied Statistics & Data
                 </Link>
               </li>
               <li>
                 <Link href="/programs/pgd-safety-environment" className="hover:text-ui-gold-300 transition-colors">
-                  PGD Safety & HSE Mgmt
+                  Diploma in Safety & HSE Mgmt
                 </Link>
               </li>
               <li>

@@ -3,20 +3,20 @@ import "./globals.css";
 import { ToastProvider } from "@/components/ToastProvider";
 
 export const metadata: Metadata = {
-  title: "University of Ibadan Consultancy Services Unit | Postgraduate & Professional Diplomas",
-  description: "Official portal for University of Ibadan Consultancy Services Unit postgraduate diplomas (PGD), higher diplomas, and professional development certifications.",
+  title: "University of Ibadan Consultancy Services Unit | Executive & Professional Diplomas",
+  description: "Official portal for University of Ibadan Consultancy Services Unit executive diplomas, higher diplomas, and professional development certifications.",
   keywords: [
     "University of Ibadan", 
     "UI Consultancy Services Unit", 
-    "Postgraduate Diploma Nigeria", 
-    "PGD Computer Science", 
-    "HND to Masters conversion", 
-    "Ibadan Postgraduate",
+    "Executive Diploma Nigeria",
+    "Diploma Computer Science",
+    "Professional Certificates",
+    "Ibadan Executive Diplomas",
     "Executive Diplomas"
   ],
   openGraph: {
     title: "University of Ibadan Consultancy Services Unit",
-    description: "Senate Accredited Postgraduate Diplomas & Higher Executive Diplomas.",
+    description: "Senate Accredited Executive Diplomas & Higher Executive Diplomas.",
     url: "https://uiconsultancy.org",
     siteName: "University of Ibadan Consultancy Services Unit",
     locale: "en_NG",

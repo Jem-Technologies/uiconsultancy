@@ -2,7 +2,7 @@ export interface Program {
   id: string;
   title: string;
   code: string;
-  level: "Postgraduate Diploma (PGD)" | "Higher Diploma" | "Professional Diploma";
+  level: "Executive Diploma" | "Higher Diploma" | "Professional Diploma";
   department: "Computing & IT" | "Management & Business" | "Public Administration" | "Environmental & Safety" | "Finance & Accounting";
   duration: string;
   mode: "Weekend / Blended" | "Online / Distance" | "Full-Time Executive";
@@ -16,9 +16,9 @@ export interface Program {
 export const PROGRAMS: Program[] = [
   {
     id: "pgd-computer-science",
-    title: "Postgraduate Diploma in Computer Science & Information Technology",
+    title: "Executive Diploma in Computer Science & Information Technology",
     code: "PGD-CSIT",
-    level: "Postgraduate Diploma (PGD)",
+    level: "Executive Diploma",
     department: "Computing & IT",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
@@ -33,7 +33,7 @@ export const PROGRAMS: Program[] = [
       "Software Engineer / Developer",
       "IT Infrastructure Consultant",
       "Data Engineer",
-      "Eligible for M.Sc. Computer Science conversion"
+      "Advanced Systems & Infrastructure Specialist"
     ],
     modules: [
       "Advanced Object-Oriented Programming (Python & Java)",
@@ -41,15 +41,15 @@ export const PROGRAMS: Program[] = [
       "Software Engineering Principles",
       "Computer Networks & Cybersecurity Fundamentals",
       "Cloud Computing & Web Architecture",
-      "PGD Applied Research Project"
+      "Applied Research Project"
     ],
     featured: true
   },
   {
     id: "pgd-business-management",
-    title: "Postgraduate Diploma in Business Management & Administration",
+    title: "Executive Diploma in Business Management & Administration",
     code: "PGD-BMA",
-    level: "Postgraduate Diploma (PGD)",
+    level: "Executive Diploma",
     department: "Management & Business",
     duration: "12 Months (2 Semesters)",
     mode: "Online / Distance",
@@ -64,7 +64,7 @@ export const PROGRAMS: Program[] = [
       "Corporate Strategy Officer",
       "Human Resource Manager",
       "Entrepreneur & Business Owner",
-      "Gateway to MBA program"
+      "Executive Management Advancement"
     ],
     modules: [
       "Managerial Economics",
@@ -78,9 +78,9 @@ export const PROGRAMS: Program[] = [
   },
   {
     id: "pgd-applied-statistics",
-    title: "Postgraduate Diploma in Applied Statistics & Data Analytics",
+    title: "Executive Diploma in Applied Statistics & Data Analytics",
     code: "PGD-ASDA",
-    level: "Postgraduate Diploma (PGD)",
+    level: "Executive Diploma",
     department: "Computing & IT",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
@@ -107,9 +107,9 @@ export const PROGRAMS: Program[] = [
   },
   {
     id: "pgd-public-admin",
-    title: "Postgraduate Diploma in Public Administration & Policy",
+    title: "Executive Diploma in Public Administration & Policy",
     code: "PGD-PAP",
-    level: "Postgraduate Diploma (PGD)",
+    level: "Executive Diploma",
     department: "Public Administration",
     duration: "12 Months (2 Semesters)",
     mode: "Online / Distance",
@@ -135,13 +135,13 @@ export const PROGRAMS: Program[] = [
   },
   {
     id: "pgd-safety-environment",
-    title: "Postgraduate Diploma in Occupational Health, Safety & Environmental Management",
+    title: "Executive Diploma in Occupational Health, Safety & Environmental Management",
     code: "PGD-OHSE",
-    level: "Postgraduate Diploma (PGD)",
+    level: "Executive Diploma",
     department: "Environmental & Safety",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
-    description: "Specialized post-graduate training aligned with international HSE standards for energy, manufacturing, construction, and corporate safety leaders.",
+    description: "Specialized executive training aligned with international HSE standards for energy, manufacturing, construction, and corporate safety leaders.",
     requirements: [
       "B.Sc or HND in Engineering, Environmental Science, Biological Sciences, or related fields.",
       "Professionals in safety-critical sectors with relevant diplomas."

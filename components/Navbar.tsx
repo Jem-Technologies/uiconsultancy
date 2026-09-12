@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
                 Consultancy Services Unit
               </span>
               <span className="text-[10px] text-slate-500 font-sans">
-                Postgraduate & Professional Studies
+                Executive & Professional Diplomas
               </span>
             </div>
           </Link>

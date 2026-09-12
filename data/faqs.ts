@@ -9,8 +9,8 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-1",
     category: "Admissions",
-    question: "I have an HND or a Third-Class degree. Can I really gain admission and upgrade my career?",
-    answer: "Absolutely! We specifically designed our Postgraduate Diplomas to empower HND holders and Third-Class graduates who want to rewrite their academic story. Completing a PGD at University of Ibadan Consultancy bridges your degree and gives you direct eligibility to apply for Master's (M.Sc / MBA) degree programs anywhere in the world."
+    question: "Can I gain admission to upgrade my practical career skills?",
+    answer: "Absolutely! We specifically designed our Executive Diplomas to empower professionals who want to enhance their practical skill set and career credentials. Completing a Diploma at University of Ibadan Consultancy strengthens your profile and gives you industry-recognized expertise for top career positions."
   },
   {
     id: "faq-2",
@@ -27,7 +27,7 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-4",
     category: "Fees & Payments",
-    question: "Can my employer sponsor my postgraduate diploma program?",
+    question: "Can my employer sponsor my diploma program?",
     answer: "Yes! Many of our students are sponsored by corporate organizations, government ministries, and private employers. We provide formal tuition invoices, corporate sponsorship letters, and official bursary receipts to support your employer's sponsorship approval process."
   },
   {
@@ -39,8 +39,8 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-6",
     category: "Academics & Study",
-    question: "Is the Postgraduate Diploma certificate recognized by the University Senate and employers?",
-    answer: "Yes! Every single Postgraduate Diploma and Professional Certificate is officially awarded under the authority of the University of Ibadan Senate. Your certificate carries the premier University of Ibadan crest and seal, recognized by employers, civil service commissions, and universities globally."
+    question: "Is the Executive Diploma certificate recognized by the University Senate and employers?",
+    answer: "Yes! Every single Executive Diploma and Professional Certificate is officially awarded under the authority of the University of Ibadan Senate. Your certificate carries the premier University of Ibadan crest and seal, recognized by employers, civil service commissions, and organizations globally."
   },
   {
     id: "faq-7",

@@ -39,8 +39,8 @@ export default function PortalPage() {
 
   const student = {
     name: "BABATUNDE, Oluwaseun Emmanuel",
-    matricNo: "UIC/PGD/CSIT/2026/0142",
-    program: "Postgraduate Diploma in Computer Science & IT",
+    matricNo: "UIC/EXD/CSIT/2026/0142",
+    program: "Executive Diploma in Computer Science & IT",
     department: "Computing & IT Consultancy",
     level: "1st Semester (2026/2027 Session)",
     cgpa: "4.80 / 5.00",
@@ -99,7 +99,7 @@ export default function PortalPage() {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. info@uiconsultancy.org or UIC/PGD/2026/0142"
+                    placeholder="e.g. info@uiconsultancy.org or UIC/EXD/2026/0142"
                     value={loginForm.identifier}
                     onChange={(e) => setLoginForm({ ...loginForm, identifier: e.target.value })}
                     className="w-full pl-9 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-ui-navy-900 font-medium"
