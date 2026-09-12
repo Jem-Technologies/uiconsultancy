@@ -64,21 +64,21 @@ export const HeroSection: React.FC = () => {
             </div>
 
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
-              Your Pathway To A <span className="text-ui-gold-400 font-serif italic">Higher Master’s Degree</span> & Professional Success
+              Your Pathway To <span className="text-ui-gold-400 font-serif italic">Executive Leadership</span> & Professional Success
             </h1>
 
             <p className="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl font-normal drop-shadow-sm">
-              You’ve worked hard to get your life going. Whether you hold an HND, a Third-Class degree, or are looking to pivot into a new career, our flexible Postgraduate Diplomas give you the recognized credential and confidence to rise higher.
+              You’ve worked hard to get your life going. Whether you are looking to advance in your current role, gain specialized expertise, or pivot into a new career, our flexible Executive Diplomas give you the recognized credential and confidence to rise higher.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs sm:text-sm text-slate-100 font-medium">
               <div className="flex items-center gap-2 bg-ui-navy-900/60 p-2.5 rounded-lg border border-slate-700/60 backdrop-blur-sm">
                 <GraduationCap className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>100% Senate Approved UI PGDs</span>
+                <span>100% Senate Approved Diplomas</span>
               </div>
               <div className="flex items-center gap-2 bg-ui-navy-900/60 p-2.5 rounded-lg border border-slate-700/60 backdrop-blur-sm">
                 <Sparkles className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>HND & 3rd Class Bridge to M.Sc</span>
+                <span>Practical Industry Skill Mastery</span>
               </div>
             </div>
 

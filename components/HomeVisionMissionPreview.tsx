@@ -42,7 +42,7 @@ export const HomeVisionMissionPreview: React.FC = () => {
                 </div>
                 <h3 className="font-serif font-bold text-lg text-ui-navy-900">Our Mission</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  To provide accessible, flexible, and accredited postgraduate education that unlocks Master&apos;s degree eligibility and corporate leadership.
+                  To provide accessible, flexible, and accredited executive education that fosters practical mastery and corporate leadership.
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ export const HomeVisionMissionPreview: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden border-4 border-ui-gold-500 shadow-2xl">
               <img
                 src={ACADEMIC_IMAGES.studentsStudying}
-                alt="University of Ibadan PGD Students"
+                alt="University of Ibadan Diploma Students"
                 className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ui-navy-950/90 via-transparent to-transparent flex flex-col justify-end p-6 text-white">

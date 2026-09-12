@@ -32,7 +32,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             <input
               type="text"
               autoFocus
-              placeholder="Search programs, course codes (e.g. CSIT, Safety, PGD)..."
+              placeholder="Search programs, course codes (e.g. CSIT, Safety, Diploma)..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="w-full text-base font-semibold text-ui-navy-900 focus:outline-none placeholder-slate-400"

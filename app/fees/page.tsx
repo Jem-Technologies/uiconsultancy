@@ -31,7 +31,7 @@ export default function FeesPage() {
             Flexible Financial Payment Options
           </h1>
           <p className="text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed">
-            At University of Ibadan Consultancy Services Unit, we ensure that higher postgraduate education remains accessible and affordable for every motivated adult through flexible installment structures.
+            At University of Ibadan Consultancy Services Unit, we ensure that higher executive education remains accessible and affordable for every motivated adult through flexible installment structures.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function FeesPage() {
         <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg space-y-8">
           <div className="border-b border-slate-200 pb-4">
             <h2 className="font-serif font-bold text-2xl text-ui-navy-900">Program Tuition & Coverage Breakdown</h2>
-            <p className="text-xs text-slate-500">Coverage and itemized components across major PGD tracks.</p>
+            <p className="text-xs text-slate-500">Coverage and itemized components across major Executive Diploma tracks.</p>
           </div>
 
           <div className="space-y-8">

@@ -60,10 +60,10 @@ export const DirectorsWelcomeSection: React.FC = () => {
                 “On behalf of the Governing Council and Management of the University of Ibadan Consultancy Services Unit, I extend a warm and encouraging welcome to you.
               </p>
               <p>
-                We know that balancing work, personal life, and higher education can feel daunting. Many of our students arrive after struggling with HND grade limitations or Third-Class degree constraints. Our mission is to tell you clearly: <strong>your previous qualification is not the end of your story.</strong>
+                We know that balancing work, personal life, and professional development can feel challenging. Many of our students arrive seeking career advancement and practical mastery. Our mission is to provide you with industry-relevant skills, recognized credentials, and the confidence to lead.
               </p>
               <p>
-                Through our Senate-approved Postgraduate Diplomas (PGD), weekend blended schedules, and dedicated faculty, we provide you with a direct bridge to Master’s degree eligibility and professional promotion. You will find an encouraging environment designed to see you succeed.”
+                Through our Senate-approved Executive Diplomas, weekend blended schedules, and dedicated faculty, we provide you with practical tools for professional growth and leadership promotion. You will find an encouraging environment designed to see you succeed.”
               </p>
             </div>
 

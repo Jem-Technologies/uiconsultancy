@@ -4,7 +4,7 @@ import React from "react";
 import { 
   Award, 
   Clock, 
-  TrendingUp, 
+  Briefcase,
   Users, 
   Building2, 
   ShieldCheck 
@@ -15,12 +15,12 @@ export const WhyUIConsultancy: React.FC = () => {
     {
       icon: Award,
       title: "University Senate Recognition",
-      description: "All Postgraduate Diplomas and Professional Certificates are officially issued under the authority of the University of Ibadan Senate, recognized worldwide across corporate, government, and academic sectors."
+      description: "All Executive Diplomas and Professional Certificates are officially issued under the authority of the University of Ibadan Senate, recognized worldwide across corporate, government, and industry sectors."
     },
     {
-      icon: TrendingUp,
-      title: "Direct Gateway to Master's Degrees",
-      description: "HND and Third Class graduates can bridge their qualifications. Successful PGD completion unlocks direct admission eligibility into M.Sc and MBA programs at University of Ibadan and international partner universities."
+      icon: Briefcase,
+      title: "Practical & Applied Industry Curriculum",
+      description: "Gain hands-on expertise, workplace-ready competencies, and practical problem-solving skills tailored specifically for immediate real-world corporate, public sector, and entrepreneurial impact."
     },
     {
       icon: Clock,
@@ -40,7 +40,7 @@ export const WhyUIConsultancy: React.FC = () => {
     {
       icon: Building2,
       title: "Flexible Financial Payment Policy",
-      description: "High quality postgraduate education made accessible with manageable installment schedules, transparent policies, and corporate support without financial strain."
+      description: "High quality professional education made accessible with manageable installment schedules, transparent policies, and corporate support without financial strain."
     }
   ];
 
@@ -53,7 +53,7 @@ export const WhyUIConsultancy: React.FC = () => {
             Institutional Advantage
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ui-navy-900">
-            Why Pursue Your Postgraduate Diploma at UI Consultancy?
+            Why Pursue Your Executive Diploma at UI Consultancy?
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
             For over four decades, the University of Ibadan Consultancy Services Unit has led executive human capital development across West Africa.

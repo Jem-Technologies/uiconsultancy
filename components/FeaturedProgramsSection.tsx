@@ -26,10 +26,10 @@ export const FeaturedProgramsSection: React.FC = () => {
               Academic Catalog
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ui-navy-900">
-              Featured Postgraduate & Professional Diplomas
+              Featured Executive & Professional Diplomas
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
-              Explore specialized diploma courses designed to upgrade your credentials and qualify you for higher degree studies.
+              Explore specialized diploma courses designed to upgrade your credentials and expand your professional capacity.
             </p>
           </div>
 
