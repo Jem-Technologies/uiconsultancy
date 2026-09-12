@@ -9,26 +9,26 @@ export const TestimonialsSection: React.FC = () => {
     {
       name: "Mrs. Folashade Aina",
       role: "Lead Systems Architect, FirstBank Nigeria",
-      program: "PGD Computer Science & IT (2022 Cohort)",
+      program: "Diploma in Computer Science & IT (2022 Cohort)",
       image: ACADEMIC_IMAGES.testimonials[2].img,
-      quote: "As an HND graduate, I was passed over for promotions despite my technical skills. The UI Consultancy PGD gave me the recognized University Senate degree that qualified me for cloud architecture leadership and direct M.Sc entry.",
-      badge: "HND to M.Sc Conversion"
+      quote: "I wanted to level up my technical credentials for leadership roles. The UI Consultancy Executive Diploma gave me the recognized University Senate qualification that equipped me for cloud architecture leadership and rapid career growth.",
+      badge: "Career Advancement"
     },
     {
       name: "Engr. Nnamdi Azikiwe Jr.",
       role: "Senior Safety Manager, Shell West Africa",
-      program: "PGD Occupational Health & Safety",
+      program: "Diploma in Occupational Health & Safety",
       image: ACADEMIC_IMAGES.testimonials[1].img,
-      quote: "The HSE Postgraduate Diploma curriculum at UI Consultancy was practical and flexible. Weekend lectures allowed me to work full-time while earning an accredited UI qualification that boosted my international consulting standing.",
+      quote: "The HSE Executive Diploma curriculum at UI Consultancy was practical and flexible. Weekend lectures allowed me to work full-time while earning an accredited UI qualification that boosted my international consulting standing.",
       badge: "Career Promotion"
     },
     {
       name: "Dr. Olabisi Adeleke",
       role: "Operations Director, Zenith Logistics",
-      program: "PGD Business Management & Administration",
+      program: "Diploma in Business Management & Administration",
       image: ACADEMIC_IMAGES.testimonials[0].img,
-      quote: "I graduated with a Third Class degree years ago and thought my academic journey was locked. UI Consultancy welcomed me with open arms, challenged me, and helped me build the GPA needed for my MBA.",
-      badge: "Third-Class Rebuilding Success"
+      quote: "I was looking to build executive business management skills to scale my career. UI Consultancy provided practical coursework, top-tier faculty, and invaluable strategic management insights.",
+      badge: "Executive Leadership"
     }
   ];
 
@@ -44,7 +44,7 @@ export const TestimonialsSection: React.FC = () => {
             Real Stories of Career Transformation & Success
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
-            Discover how UI Consultancy Postgraduate Diplomas empower graduates to elevate their professions and achieve academic excellence.
+            Discover how UI Consultancy Executive Diplomas empower graduates to elevate their professions and achieve academic excellence.
           </p>
         </div>
 

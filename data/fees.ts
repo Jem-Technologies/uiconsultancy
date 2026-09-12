@@ -16,7 +16,7 @@ export interface ProgramFeeGuideline {
 export const FEE_GUIDELINES: ProgramFeeGuideline[] = [
   {
     programId: "pgd-computer-science",
-    programTitle: "Postgraduate Diploma in Computer Science & Information Technology",
+    programTitle: "Executive Diploma in Computer Science & Information Technology",
     breakdown: [
       { category: "Tuition Fee", description: "Covers core academic instruction, cloud laboratory sandboxes, and practical computing sessions." },
       { category: "Acceptance & Portal Registration", description: "One-off administrative setup, matriculation processing, and digital ID card generation." },
@@ -30,7 +30,7 @@ export const FEE_GUIDELINES: ProgramFeeGuideline[] = [
   },
   {
     programId: "pgd-business-management",
-    programTitle: "Postgraduate Diploma in Business Management & Administration",
+    programTitle: "Executive Diploma in Business Management & Administration",
     breakdown: [
       { category: "Tuition Fee", description: "Covers virtual/in-person lectures, Harvard & UI Business School executive case study packs." },
       { category: "Acceptance & Portal Registration", description: "Official student activation and matriculation pack." },
@@ -43,7 +43,7 @@ export const FEE_GUIDELINES: ProgramFeeGuideline[] = [
   },
   {
     programId: "pgd-safety-environment",
-    programTitle: "Postgraduate Diploma in Occupational Health, Safety & Environmental Management",
+    programTitle: "Executive Diploma in Occupational Health, Safety & Environmental Management",
     breakdown: [
       { category: "Tuition Fee", description: "Covers lectures, HSE legislation toolkits, and industrial site visits." },
       { category: "Acceptance & Registration", description: "Matriculation credentials and safety gear kit." },

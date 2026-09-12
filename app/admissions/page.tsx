@@ -26,7 +26,7 @@ export default function AdmissionsPage() {
             Entry Requirements & Qualifications
           </h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Review detailed admission requirements for Postgraduate Diplomas (PGD), Higher Diplomas (HD), and Professional Diplomas across all departments.
+            Review detailed admission requirements for Executive Diplomas, Higher Diplomas (HD), and Professional Diplomas across all departments.
           </p>
         </div>
       </section>
@@ -37,13 +37,13 @@ export default function AdmissionsPage() {
           <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm space-y-6 hover:shadow-lg transition-all">
             <div className="space-y-2">
               <span className="bg-ui-navy-900 text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">
-                Postgraduate Level
+                Executive Level
               </span>
               <h3 className="font-serif font-bold text-xl text-ui-navy-900">
-                Postgraduate Diploma (PGD)
+                Executive Diploma
               </h3>
               <p className="text-slate-500 text-xs">
-                Designed for First Degree and HND holders seeking specialized mastery or academic conversion to M.Sc programs.
+                Designed for First Degree and HND holders seeking specialized executive mastery and practical skills.
               </p>
             </div>
 
@@ -68,10 +68,10 @@ export default function AdmissionsPage() {
 
             <div className="pt-4 border-t border-slate-100">
               <Link
-                href="/apply?level=PGD"
+                href="/apply?level=Executive"
                 className="w-full bg-ui-navy-900 hover:bg-ui-navy-950 text-white text-xs font-bold py-3 rounded-xl flex items-center justify-center gap-2"
               >
-                Apply For PGD Entry <ArrowRight className="w-3.5 h-3.5" />
+                Apply For Executive Diploma Entry <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function AdmissionsPage() {
 
             <div className="p-4 bg-ui-navy-950/80 rounded-xl border border-slate-800 space-y-1">
               <span className="font-bold text-ui-gold-400">3. NYSC Certificate</span>
-              <p className="text-slate-400 text-[11px]">Discharge certificate or official exemption certificate (for PGD applicants).</p>
+              <p className="text-slate-400 text-[11px]">Discharge certificate or official exemption certificate (for Executive Diploma applicants).</p>
             </div>
 
             <div className="p-4 bg-ui-navy-950/80 rounded-xl border border-slate-800 space-y-1">

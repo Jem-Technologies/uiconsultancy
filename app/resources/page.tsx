@@ -10,7 +10,7 @@ export default function ResourcesPage() {
   const downloads = [
     { title: "2026/2027 Academic Session Prospectus", desc: "Comprehensive course descriptions, department profiles, and fee schedules.", file: "UI_Consultancy_Prospectus_2026.pdf", size: "3.2 MB" },
     { title: "Student Handbook & Code of Conduct", desc: "Academic policies, examination rules, grading system, and campus guidelines.", file: "UI_Consultancy_Student_Handbook.pdf", size: "2.1 MB" },
-    { title: "Postgraduate Diploma Research Project Manual", desc: "Formatting guidelines, citation standards, and submission protocols for final project dissertations.", file: "PGD_Research_Project_Guidelines.pdf", size: "1.8 MB" },
+    { title: "Executive Diploma Research Project Manual", desc: "Formatting guidelines, citation standards, and submission protocols for final project dissertations.", file: "Executive_Diploma_Research_Guidelines.pdf", size: "1.8 MB" },
     { title: "Transcript & Certificate Verification Request Form", desc: "Official application form for academic transcript dispatch and certificate verification.", file: "UI_Transcript_Request_Form.pdf", size: "850 KB" }
   ];
 

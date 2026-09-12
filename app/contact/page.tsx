@@ -146,7 +146,7 @@ export default function ContactPage() {
                         onChange={(e) => setFormData({ ...form, subject: e.target.value })}
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-ui-navy-900 font-semibold"
                       >
-                        <option value="Admissions Inquiry">Postgraduate Admission Inquiry</option>
+                        <option value="Admissions Inquiry">Executive Diploma Admission Inquiry</option>
                         <option value="Tuition Payment Help">Tuition Payment & Installments</option>
                         <option value="Certificate Verification">Certificate & Transcript Verification</option>
                         <option value="General Support">General Executive Support</option>

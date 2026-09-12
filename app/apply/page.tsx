@@ -575,7 +575,7 @@ export default function ApplyPage() {
             Admissions Portal 2026/2027
           </div>
           <h1 className="font-serif text-3xl sm:text-4xl font-bold text-white">
-            Online Postgraduate Admission Application
+            Online Executive Diploma Admission Application
           </h1>
           <p className="text-slate-300 text-xs sm:text-sm">
             University of Ibadan Consultancy Services Unit — Direct Senate Accredited Programs

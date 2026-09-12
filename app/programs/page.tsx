@@ -46,10 +46,10 @@ export default function ProgramsPage() {
             Academic Directory
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white">
-            Postgraduate & Executive Diploma Programs
+            Executive & Professional Diploma Programs
           </h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Choose from specialized postgraduate diplomas, higher diplomas, and professional certifications recognized globally and approved by the University of Ibadan Senate.
+            Choose from specialized executive diplomas, higher diplomas, and professional certifications recognized globally and approved by the University of Ibadan Senate.
           </p>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function ProgramsPage() {
                 className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-ui-navy-900 text-slate-900 font-medium"
               >
                 <option value="All Qualifications">All Qualifications</option>
-                <option value="Postgraduate Diploma (PGD)">Postgraduate Diploma (PGD)</option>
+                <option value="Executive Diploma">Executive Diploma</option>
                 <option value="Higher Diploma">Higher Diploma</option>
                 <option value="Professional Diploma">Professional Diploma</option>
               </select>

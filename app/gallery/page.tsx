@@ -31,12 +31,12 @@ export default function GalleryPage() {
   const galleryItems = [
     {
       id: 1,
-      title: "2026 Postgraduate Matriculation Ceremony",
+      title: "2026 Executive Matriculation Ceremony",
       category: "matriculation",
       date: "February 2026",
       location: "Trenchard Hall, University of Ibadan Main Campus",
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop",
-      description: "Official inauguration and matriculation swearing-in ceremony for the 2026 cohort of Postgraduate Diploma and Higher Executive Diploma scholars in the iconic Trenchard Hall.",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
+      description: "Official inauguration and matriculation swearing-in ceremony for the 2026 cohort of Executive Diploma and Higher Executive Diploma scholars in the iconic Trenchard Hall.",
       highlights: ["Over 1,200 executive candidates matriculated", "Keynote address by UI Senate representatives", "Formal Oath taking and academic gown presentation"]
     },
     {
@@ -46,7 +46,7 @@ export default function GalleryPage() {
       date: "January 2026",
       location: "UI Consultancy ICT Innovation Lab",
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
-      description: "Hands-on coding, machine learning modeling, and database systems practical workshop for PGD Computer Science and Data Analytics students.",
+      description: "Hands-on coding, machine learning modeling, and database systems practical workshop for Diploma in Computer Science and Data Analytics students.",
       highlights: ["State-of-the-art workstation facilities", "1-on-1 mentorship from industry senior engineers", "Real-world enterprise system case studies"]
     },
     {
@@ -55,7 +55,7 @@ export default function GalleryPage() {
       category: "campus",
       date: "2026",
       location: "Commercial Avenue, UI Campus",
-      image: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=1200&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
       description: "The dedicated administrative and executive building housing admission consultation desks, bursary, e-library resource center, and lecture halls.",
       highlights: ["Serene academic environment", "24/7 solar backup energy infrastructure", "Centralized student support desks"]
     },
@@ -65,8 +65,8 @@ export default function GalleryPage() {
       category: "seminars",
       date: "January 2026",
       location: "Faculty of Technology Field Complex",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop",
-      description: "PGD Health, Safety & Environmental Management students conducting industrial risk assessment, hazardous material drill, and safety protocol audits.",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
+      description: "Diploma in Health, Safety & Environmental Management students conducting industrial risk assessment, hazardous material drill, and safety protocol audits.",
       highlights: ["Certified safety equipment demonstration", "Emergency response simulation", "OSHA & NISafety guidelines integration"]
     },
     {
@@ -75,18 +75,18 @@ export default function GalleryPage() {
       category: "seminars",
       date: "December 2025",
       location: "UI International Conference Center",
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop",
       description: "Interactive executive masterclass featuring guest lectures from multinational CEOs, financial consultants, and public sector administrators.",
       highlights: ["Networking with corporate leaders", "Panel discussions on African economic policy", "Presentation of executive case studies"]
     },
     {
       id: 6,
-      title: "PGD Class of 2025 Graduation & Award Ceremony",
+      title: "Class of 2025 Graduation & Award Ceremony",
       category: "matriculation",
       date: "November 2025",
       location: "University of Ibadan Convocation Arena",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200&auto=format&fit=crop",
-      description: "Celebrating academic excellence and official Senate transcript conferment for graduating PGD and Higher Diploma candidates.",
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop",
+      description: "Celebrating academic excellence and official Senate transcript conferment for graduating Diploma and Higher Diploma candidates.",
       highlights: ["Valedictory speeches & top GPA recognitions", "Senate certificate distribution", "Alumni network onboarding"]
     },
     {
@@ -95,7 +95,7 @@ export default function GalleryPage() {
       category: "campus",
       date: "2026",
       location: "Consultancy Executive Lecture Wings",
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
       description: "Equipped with interactive smart displays, hybrid video-conferencing systems, and ergonomic seating designed for working professionals.",
       highlights: ["Hybrid remote participation integration", "Climate-controlled lecture environments", "High-speed optical fiber connectivity"]
     },
@@ -105,8 +105,8 @@ export default function GalleryPage() {
       category: "lectures",
       date: "February 2026",
       location: "UI Consultancy E-Resource Seminar Room",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop",
-      description: "PGD Applied Statistics scholars defending capstone research projects in epidemiological modeling, biometric data analysis, and survey sampling.",
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1200&auto=format&fit=crop",
+      description: "Diploma in Applied Statistics scholars defending capstone research projects in epidemiological modeling, biometric data analysis, and survey sampling.",
       highlights: ["SPSS, R, and Python data visualization", "Faculty peer reviews", "Publication-ready research methodology"]
     }
   ];
@@ -213,7 +213,7 @@ export default function GalleryPage() {
               Become Part of Our Next Success Story
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-              Applications for the 2026/2027 academic session are currently open. Join our executive postgraduate programs and gain university Senate accredited qualifications.
+              Applications for the 2026/2027 academic session are currently open. Join our executive diploma programs and gain university Senate accredited qualifications.
             </p>
           </div>
 

@@ -21,8 +21,8 @@ import {
 
 export default function AboutPage() {
   const boardMembers = [
-    { name: "Prof. K. O. Oloyede", title: "Chairman, Governing Board", dept: "UI Consultancy Services Unit", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" },
-    { name: "Prof. A. I. Olayinka", title: "Board Member & Ex-Vice Chancellor", dept: "University of Ibadan", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop" },
+    { name: "Prof. K. O. Oloyede", title: "Chairman, Governing Board", dept: "UI Consultancy Services Unit", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" },
+    { name: "Prof. A. I. Olayinka", title: "Board Member & Ex-Vice Chancellor", dept: "University of Ibadan", image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=400&auto=format&fit=crop" },
     { name: "Dr. Mrs. Y. A. Akinloye", title: "Managing Director / Secretary", dept: "UI Consultancy Services Unit", image: ACADEMIC_IMAGES.director },
     { name: "Engr. Folorunsho Alakija", title: "Industry Advisory Member", dept: "Corporate Governance Council", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" }
   ];
@@ -67,7 +67,7 @@ export default function AboutPage() {
               Established as an integral unit of the University of Ibadan, the Consultancy Services Unit is tasked with extending the institution&apos;s world-class faculty expertise, research capabilities, and academic accreditation to working adults, civil servants, and corporate organizations across West Africa.
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              We specialize in Senate-approved Postgraduate Diplomas (PGD), Higher Diplomas, and Professional Certifications tailored to allow working individuals upgrade their degrees, earn Master&apos;s degree eligibility, and pivot into thriving new career fields.
+              We specialize in Senate-approved Executive Diplomas, Higher Diplomas, and Professional Certifications tailored to allow working individuals upgrade their practical skills, earn recognized credentials, and pivot into thriving new career fields.
             </p>
 
             <div className="pt-2 flex items-center gap-6 text-xs text-slate-700 font-semibold">
@@ -107,7 +107,7 @@ export default function AboutPage() {
             </div>
             <h3 className="font-serif font-bold text-2xl text-ui-navy-900">Our Vision</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              To be the foremost university consultancy unit in Africa, recognized globally for excellence in post-graduate education, executive capacity development, and high-impact advisory services that advance career mobility and national development.
+              To be the foremost university consultancy unit in Africa, recognized globally for excellence in professional executive education, executive capacity development, and high-impact advisory services that advance career mobility and national development.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function AboutPage() {
             </div>
             <h3 className="font-serif font-bold text-2xl text-ui-navy-900">Our Mission</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              To bridge higher academic research with industrial performance through Senate-accredited postgraduate diplomas, flexible executive delivery modes, and practical skill mastery tailored for modern global professionals.
+              To bridge higher academic research with industrial performance through Senate-accredited executive diplomas, flexible executive delivery modes, and practical skill mastery tailored for modern global professionals.
             </p>
           </div>
         </div>

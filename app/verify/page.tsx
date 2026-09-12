@@ -26,10 +26,10 @@ export default function VerifyPage() {
     if (query === "UIC-2023-0891" || query.includes("UIC")) {
       setResult({
         found: true,
-        type: "Postgraduate Diploma Certificate",
+        type: "Executive Diploma Certificate",
         studentName: "BABATUNDE, Oluwaseun Emmanuel",
-        matricNumber: query.length > 5 ? query : "UIC/PGD/2023/0891",
-        programTitle: "Postgraduate Diploma in Computer Science & Information Technology",
+        matricNumber: query.length > 5 ? query : "UIC/EXD/2023/0891",
+        programTitle: "Executive Diploma in Computer Science & Information Technology",
         classAwarded: "Distinction (CGPA 4.85 / 5.00)",
         issueDate: "October 24, 2023",
         universityStatus: "VERIFIED & AUTHENTIC",
