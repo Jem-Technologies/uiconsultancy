@@ -578,7 +578,7 @@ export default function ApplyPage() {
             Online Executive Diploma Admission Application
           </h1>
           <p className="text-slate-300 text-xs sm:text-sm">
-            University of Ibadan Consultancy Services Unit — Direct Senate Accredited Programs
+            University of Ibadan Consultancy Services Unit — Accredited Diploma Programs
           </p>
         </div>
       </section>

@@ -9,7 +9,6 @@ import { WhyUIConsultancy } from "@/components/WhyUIConsultancy";
 import { FeaturedProgramsSection } from "@/components/FeaturedProgramsSection";
 import { AdmissionsPathwaySection } from "@/components/AdmissionsPathwaySection";
 import { DirectorsWelcomeSection } from "@/components/DirectorsWelcomeSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { NewsEventsSection } from "@/components/NewsEventsSection";
 import { CallToActionBanner } from "@/components/CallToActionBanner";
 import { Footer } from "@/components/Footer";
@@ -30,7 +29,6 @@ export default function HomePage() {
         <FeaturedProgramsSection />
         <AdmissionsPathwaySection />
         <DirectorsWelcomeSection />
-        <TestimonialsSection />
         <NewsEventsSection />
         <CallToActionBanner />
       </main>

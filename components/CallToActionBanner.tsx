@@ -16,7 +16,7 @@ export const CallToActionBanner: React.FC = () => {
             </div>
             
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">
-              Download the 2026/2027 Academic Prospectus & Handbook
+              Begin Your Executive Diploma Journey Today
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -25,20 +25,18 @@ export const CallToActionBanner: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
-            <a
-              href="/resources"
-              className="w-full sm:w-auto bg-ui-gold-500 hover:bg-ui-gold-400 text-ui-navy-950 font-bold px-7 py-4 rounded-xl text-sm transition-all shadow-lg flex items-center justify-center gap-2"
-            >
-              <Download className="w-5 h-5" />
-              Download Prospectus PDF
-            </a>
-
             <Link
               href="/apply"
+              className="w-full sm:w-auto bg-ui-gold-500 hover:bg-ui-gold-400 text-ui-navy-950 font-bold px-8 py-4 rounded-xl text-sm transition-all shadow-lg flex items-center justify-center gap-2"
+            >
+              <FileText className="w-5 h-5 text-ui-navy-950" />
+              Apply Online Now
+            </Link>
+            <Link
+              href="/programs"
               className="w-full sm:w-auto bg-white hover:bg-slate-100 text-ui-navy-950 font-bold px-7 py-4 rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2"
             >
-              <FileText className="w-5 h-5 text-ui-navy-900" />
-              Apply Online Now
+              Explore Programs
             </Link>
           </div>
 

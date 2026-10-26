@@ -21,15 +21,15 @@ import {
 
 export default function AboutPage() {
   const boardMembers = [
-    { name: "Prof. K. O. Oloyede", title: "Chairman, Governing Board", dept: "UI Consultancy Services Unit", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" },
+    { name: "Prof. K. O. Oloyede", title: "Chairman, Governing Board", dept: "UI Consultancy Services Unit", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" },
     { name: "Prof. A. I. Olayinka", title: "Board Member & Ex-Vice Chancellor", dept: "University of Ibadan", image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=400&auto=format&fit=crop" },
     { name: "Dr. Mrs. Y. A. Akinloye", title: "Managing Director / Secretary", dept: "UI Consultancy Services Unit", image: ACADEMIC_IMAGES.director },
     { name: "Engr. Folorunsho Alakija", title: "Industry Advisory Member", dept: "Corporate Governance Council", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" }
   ];
 
   const coreValues = [
-    { title: "Academic Integrity", desc: "100% adherence to University of Ibadan Senate rigorous academic standards." },
-    { title: "Empathetic Inclusivity", desc: "Empowering HND holders and Third-Class graduates to rebuild academic confidence." },
+    { title: "Academic Integrity", desc: "Adherence to University of Ibadan rigorous academic standards." },
+    { title: "Empathetic Inclusivity", desc: "Empowering working professionals to rebuild academic confidence and gain new skills." },
     { title: "Executive Relevance", desc: "Curricula continuously updated by industry leaders and veteran professors." },
     { title: "Flexible Learning", desc: "Blended weekend classes and digital distance learning designed around busy jobs." }
   ];
@@ -67,13 +67,13 @@ export default function AboutPage() {
               Established as an integral unit of the University of Ibadan, the Consultancy Services Unit is tasked with extending the institution&apos;s world-class faculty expertise, research capabilities, and academic accreditation to working adults, civil servants, and corporate organizations across West Africa.
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              We specialize in Senate-approved Executive Diplomas, Higher Diplomas, and Professional Certifications tailored to allow working individuals upgrade their practical skills, earn recognized credentials, and pivot into thriving new career fields.
+              We specialize in Executive Diplomas, Higher Diplomas, and Professional Certifications tailored to allow working individuals upgrade their practical skills, earn recognized credentials, and pivot into thriving new career fields.
             </p>
 
             <div className="pt-2 flex items-center gap-6 text-xs text-slate-700 font-semibold">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-                <span>100% Senate Accredited</span>
+                <span>UI Consultancy Accredited</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600" />
@@ -117,7 +117,7 @@ export default function AboutPage() {
             </div>
             <h3 className="font-serif font-bold text-2xl text-ui-navy-900">Our Mission</h3>
             <p className="text-slate-600 text-sm leading-relaxed">
-              To bridge higher academic research with industrial performance through Senate-accredited executive diplomas, flexible executive delivery modes, and practical skill mastery tailored for modern global professionals.
+              To bridge higher academic research with industrial performance through accredited executive diplomas, flexible executive delivery modes, and practical skill mastery tailored for modern global professionals.
             </p>
           </div>
         </div>

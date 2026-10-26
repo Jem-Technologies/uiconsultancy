@@ -37,7 +37,7 @@ export default function GalleryPage() {
       location: "Trenchard Hall, University of Ibadan Main Campus",
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
       description: "Official inauguration and matriculation swearing-in ceremony for the 2026 cohort of Executive Diploma and Higher Executive Diploma scholars in the iconic Trenchard Hall.",
-      highlights: ["Over 1,200 executive candidates matriculated", "Keynote address by UI Senate representatives", "Formal Oath taking and academic gown presentation"]
+      highlights: ["Over 1,200 executive candidates matriculated", "Keynote address by UI Consultancy leadership", "Formal Oath taking and academic gown presentation"]
     },
     {
       id: 2,
@@ -86,8 +86,8 @@ export default function GalleryPage() {
       date: "November 2025",
       location: "University of Ibadan Convocation Arena",
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop",
-      description: "Celebrating academic excellence and official Senate transcript conferment for graduating Diploma and Higher Diploma candidates.",
-      highlights: ["Valedictory speeches & top GPA recognitions", "Senate certificate distribution", "Alumni network onboarding"]
+      description: "Celebrating academic excellence and official certificate conferment for graduating Diploma and Higher Diploma candidates.",
+      highlights: ["Valedictory speeches & top GPA recognitions", "Official certificate distribution", "Alumni network onboarding"]
     },
     {
       id: 7,
@@ -213,7 +213,7 @@ export default function GalleryPage() {
               Become Part of Our Next Success Story
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-              Applications for the 2026/2027 academic session are currently open. Join our executive diploma programs and gain university Senate accredited qualifications.
+              Applications for the 2026/2027 academic session are currently open. Join our executive diploma programs and gain recognized qualifications.
             </p>
           </div>
 

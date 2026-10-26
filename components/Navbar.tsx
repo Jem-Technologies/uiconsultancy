@@ -55,12 +55,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             <span className="text-ui-gold-300 font-semibold bg-ui-gold-500/10 px-2.5 py-0.5 rounded border border-ui-gold-500/20">
               Academic Session 2026/2027
             </span>
-            <Link
-              href="/portal"
-              className="text-ui-gold-300 hover:text-white bg-ui-navy-900 px-2.5 py-1 rounded border border-slate-700 font-medium transition-all flex items-center gap-1 shrink-0 text-[11px]"
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-ui-gold-400" /> Portal Login
-            </Link>
           </div>
         </div>
       </div>
@@ -113,7 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
               <button
                 onClick={onOpenSearch}
                 className="p-2 text-slate-600 hover:text-ui-navy-900 hover:bg-slate-100 rounded-full transition-colors"
-                title="Search Programs & Portal"
+                title="Search Programs"
                 aria-label="Search"
               >
                 <Search className="w-5 h-5" />
@@ -121,11 +115,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             )}
 
             <Link
-              href="/portal"
+              href="/apply"
               className="bg-ui-navy-900 hover:bg-ui-navy-950 text-white font-semibold text-sm px-5 py-2.5 rounded-md shadow-md transition-all border border-ui-gold-500/40 flex items-center gap-2 hover:shadow-lg"
             >
-              <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
-              Portal Login
+              <FileText className="w-4 h-4 text-ui-gold-400" />
+              Apply Now
             </Link>
           </div>
 
@@ -174,12 +168,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
 
           <div className="pt-4 border-t border-slate-200 space-y-2">
             <Link
-              href="/portal"
+              href="/apply"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center bg-ui-navy-900 text-white font-semibold py-3 rounded-md shadow flex items-center justify-center gap-2 text-sm font-bold"
             >
-              <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
-              Portal Login
+              <FileText className="w-4 h-4 text-ui-gold-400" />
+              Apply Now
             </Link>
           </div>
         </div>

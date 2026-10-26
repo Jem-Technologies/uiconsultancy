@@ -33,7 +33,7 @@ export default function VerifyPage() {
         classAwarded: "Distinction (CGPA 4.85 / 5.00)",
         issueDate: "October 24, 2023",
         universityStatus: "VERIFIED & AUTHENTIC",
-        issuingAuthority: "University of Ibadan Consultancy Services Board & Senate"
+        issuingAuthority: "University of Ibadan Consultancy Services Unit Board"
       });
     } else {
       setResult({

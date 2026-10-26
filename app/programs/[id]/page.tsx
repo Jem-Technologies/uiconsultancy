@@ -225,7 +225,7 @@ export default function ProgramDetailPage() {
               <div className="pt-4 border-t border-slate-800 text-[11px] text-slate-400 space-y-2">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                  <span>University of Ibadan Senate Approved</span>
+                  <span>UI Consultancy Accredited</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-ui-gold-400 shrink-0" />
