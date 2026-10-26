@@ -32,7 +32,7 @@ export const HomeVisionMissionPreview: React.FC = () => {
                 </div>
                 <h3 className="font-serif font-bold text-lg text-ui-navy-900">Our Vision</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  To be Africa&apos;s leading university consultancy unit, empowering working adults with Senate-approved qualifications for global impact.
+                  To be Africa&apos;s leading university consultancy unit, empowering working adults with recognized executive qualifications for global impact.
                 </p>
               </div>
 
@@ -71,7 +71,7 @@ export const HomeVisionMissionPreview: React.FC = () => {
                   <span>University of Ibadan Heritage</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-200">
-                  Empowering over 15,000 working professionals across Nigeria and Africa with Senate-accredited diplomas.
+                  Empowering over 15,000 working professionals across Nigeria and Africa with professional diplomas.
                 </p>
               </div>
             </div>
@@ -82,7 +82,7 @@ export const HomeVisionMissionPreview: React.FC = () => {
               </div>
               <div>
                 <div className="text-2xl font-serif font-bold text-ui-gold-400">100%</div>
-                <div className="text-[11px] text-slate-300 font-medium">Senate Approved Diplomas</div>
+                <div className="text-[11px] text-slate-300 font-medium">Accredited Diplomas</div>
               </div>
             </div>
           </div>

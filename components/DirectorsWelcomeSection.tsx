@@ -63,7 +63,7 @@ export const DirectorsWelcomeSection: React.FC = () => {
                 We know that balancing work, personal life, and professional development can feel challenging. Many of our students arrive seeking career advancement and practical mastery. Our mission is to provide you with industry-relevant skills, recognized credentials, and the confidence to lead.
               </p>
               <p>
-                Through our Senate-approved Executive Diplomas, weekend blended schedules, and dedicated faculty, we provide you with practical tools for professional growth and leadership promotion. You will find an encouraging environment designed to see you succeed.”
+                Through our accredited Executive Diplomas, weekend blended schedules, and dedicated faculty, we provide you with practical tools for professional growth and leadership promotion. You will find an encouraging environment designed to see you succeed.”
               </p>
             </div>
 

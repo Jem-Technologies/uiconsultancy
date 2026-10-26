@@ -17,16 +17,15 @@ export const PROGRAMS: Program[] = [
   {
     id: "pgd-computer-science",
     title: "Executive Diploma in Computer Science & Information Technology",
-    code: "PGD-CSIT",
+    code: "ED-CSIT",
     level: "Executive Diploma",
     department: "Computing & IT",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
-    description: "Designed for graduates seeking transition into software development, cybersecurity, cloud architecture, and enterprise IT management.",
+    description: "Designed for individuals seeking practical skills in software development, cybersecurity, cloud architecture, and enterprise IT management.",
     requirements: [
-      "B.Sc, B.Tech, or HND in any STEM field or relevant discipline from a recognized institution.",
-      "Minimum of Third Class or Lower Credit.",
-      "O'Level 5 credits including English Language and Mathematics."
+      "ND, OND, NCE, HND, First Degree, or relevant work experience in IT.",
+      "O'Level credits including English Language and Mathematics."
     ],
     careerProspects: [
       "Systems Analyst",
@@ -48,15 +47,14 @@ export const PROGRAMS: Program[] = [
   {
     id: "pgd-business-management",
     title: "Executive Diploma in Business Management & Administration",
-    code: "PGD-BMA",
+    code: "ED-BMA",
     level: "Executive Diploma",
     department: "Management & Business",
     duration: "12 Months (2 Semesters)",
     mode: "Online / Distance",
-    description: "Equips non-business degree holders and mid-level managers with core strategic leadership, financial management, and business analytics skills.",
+    description: "Equips working professionals and managers with core strategic leadership, financial management, and business analytics skills.",
     requirements: [
-      "First Degree (B.Sc, B.A, B.Tech) or HND in any discipline.",
-      "At least 1-2 years post-graduation work experience preferred.",
+      "Diploma, NCE, OND, HND, First Degree or relevant supervisory/management experience.",
       "O'Level credits in English Language and Mathematics."
     ],
     careerProspects: [
@@ -79,14 +77,14 @@ export const PROGRAMS: Program[] = [
   {
     id: "pgd-applied-statistics",
     title: "Executive Diploma in Applied Statistics & Data Analytics",
-    code: "PGD-ASDA",
+    code: "ED-ASDA",
     level: "Executive Diploma",
     department: "Computing & IT",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
     description: "Focuses on quantitative research methods, statistical computing (R, SPSS, Python), data visualization, and predictive modeling for decision making.",
     requirements: [
-      "B.Sc/HND in Statistics, Mathematics, Economics, Sciences, Engineering, or Social Sciences.",
+      "Diploma, NCE, OND, HND, First Degree in Statistics, Mathematics, Economics, Sciences, or relevant background.",
       "Basic proficiency in quantitative methods."
     ],
     careerProspects: [
@@ -108,14 +106,14 @@ export const PROGRAMS: Program[] = [
   {
     id: "pgd-public-admin",
     title: "Executive Diploma in Public Administration & Policy",
-    code: "PGD-PAP",
+    code: "ED-PAP",
     level: "Executive Diploma",
     department: "Public Administration",
     duration: "12 Months (2 Semesters)",
     mode: "Online / Distance",
     description: "Geared towards civil servants, NGO executives, and public sector officers aiming to master governance, public policy formulation, and administrative law.",
     requirements: [
-      "Bachelor's degree or HND in any discipline from an accredited institution.",
+      "Diploma, NCE, OND, HND, or First Degree in any discipline from a recognized institution.",
       "Public sector or non-profit work experience is an added advantage."
     ],
     careerProspects: [
@@ -136,14 +134,14 @@ export const PROGRAMS: Program[] = [
   {
     id: "pgd-safety-environment",
     title: "Executive Diploma in Occupational Health, Safety & Environmental Management",
-    code: "PGD-OHSE",
+    code: "ED-OHSE",
     level: "Executive Diploma",
     department: "Environmental & Safety",
     duration: "12 Months (2 Semesters)",
     mode: "Weekend / Blended",
     description: "Specialized executive training aligned with international HSE standards for energy, manufacturing, construction, and corporate safety leaders.",
     requirements: [
-      "B.Sc or HND in Engineering, Environmental Science, Biological Sciences, or related fields.",
+      "Diploma, NCE, OND, HND, or First Degree in Engineering, Environmental Science, Biological Sciences, or related fields.",
       "Professionals in safety-critical sectors with relevant diplomas."
     ],
     careerProspects: [
