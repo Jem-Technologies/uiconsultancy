@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "University of Ibadan Consultancy Services Unit",
-    description: "Senate Accredited Executive Diplomas & Higher Executive Diplomas.",
+    description: "Accredited Executive Diplomas & Higher Executive Diplomas.",
     url: "https://uiconsultancy.org",
     siteName: "University of Ibadan Consultancy Services Unit",
     locale: "en_NG",

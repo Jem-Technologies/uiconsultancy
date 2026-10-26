@@ -60,11 +60,11 @@ export const HeroSection: React.FC = () => {
 
             <div className="inline-flex items-center gap-2 bg-ui-gold-500/20 border border-ui-gold-400/40 px-3.5 py-1.5 rounded-full text-ui-gold-300 text-xs font-bold tracking-wide backdrop-blur-md">
               <ShieldCheck className="w-4 h-4 text-ui-gold-400" />
-              <span>University of Ibadan Senate Accredited Programs</span>
+              <span>University of Ibadan Consultancy Programs</span>
             </div>
 
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
-              Your Pathway To <span className="text-ui-gold-400 font-serif italic">Executive Leadership</span> & Professional Success
+              Your Pathway To <span className="text-ui-gold-400 font-serif italic">Professional Success</span> & Leadership
             </h1>
 
             <p className="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl font-normal drop-shadow-sm">
@@ -74,7 +74,7 @@ export const HeroSection: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs sm:text-sm text-slate-100 font-medium">
               <div className="flex items-center gap-2 bg-ui-navy-900/60 p-2.5 rounded-lg border border-slate-700/60 backdrop-blur-sm">
                 <GraduationCap className="w-4 h-4 text-ui-gold-400 shrink-0" />
-                <span>100% Senate Approved Diplomas</span>
+                <span>Accredited Executive Diplomas</span>
               </div>
               <div className="flex items-center gap-2 bg-ui-navy-900/60 p-2.5 rounded-lg border border-slate-700/60 backdrop-blur-sm">
                 <Sparkles className="w-4 h-4 text-ui-gold-400 shrink-0" />

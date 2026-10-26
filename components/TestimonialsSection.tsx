@@ -11,7 +11,7 @@ export const TestimonialsSection: React.FC = () => {
       role: "Lead Systems Architect, FirstBank Nigeria",
       program: "Diploma in Computer Science & IT (2022 Cohort)",
       image: ACADEMIC_IMAGES.testimonials[2].img,
-      quote: "I wanted to level up my technical credentials for leadership roles. The UI Consultancy Executive Diploma gave me the recognized University Senate qualification that equipped me for cloud architecture leadership and rapid career growth.",
+      quote: "I wanted to level up my technical credentials for leadership roles. The UI Consultancy Executive Diploma gave me the recognized qualification that equipped me for cloud architecture leadership and rapid career growth.",
       badge: "Career Advancement"
     },
     {

@@ -143,10 +143,10 @@ export default function FeesPage() {
               <span>Need payment assistance or employer invoicing? Contact Bursary Desk: <strong>info@uiconsultancy.org | 0705 947 6180</strong></span>
             </div>
             <Link
-              href="/portal"
+              href="/apply"
               className="bg-ui-gold-500 hover:bg-ui-gold-400 text-ui-navy-950 font-bold px-6 py-2.5 rounded-lg shrink-0 flex items-center gap-1.5"
             >
-              <FileText className="w-4 h-4" /> Go To Student Portal Receipts
+              <FileText className="w-4 h-4" /> Start Application
             </Link>
           </div>
         </div>

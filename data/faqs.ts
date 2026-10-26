@@ -39,8 +39,8 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-6",
     category: "Academics & Study",
-    question: "Is the Executive Diploma certificate recognized by the University Senate and employers?",
-    answer: "Yes! Every single Executive Diploma and Professional Certificate is officially awarded under the authority of the University of Ibadan Senate. Your certificate carries the premier University of Ibadan crest and seal, recognized by employers, civil service commissions, and organizations globally."
+    question: "Is the Executive Diploma certificate recognized by employers and institutions?",
+    answer: "Yes! Every single Executive Diploma and Professional Certificate is officially awarded by the University of Ibadan Consultancy Services Unit. Your certificate carries the premier University of Ibadan crest and seal, recognized by employers, civil service commissions, and organizations globally."
   },
   {
     id: "faq-7",

@@ -49,7 +49,7 @@ export default function ProgramsPage() {
             Executive & Professional Diploma Programs
           </h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
-            Choose from specialized executive diplomas, higher diplomas, and professional certifications recognized globally and approved by the University of Ibadan Senate.
+            Choose from specialized executive diplomas, higher diplomas, and professional certifications recognized across corporate, government, and industry sectors.
           </p>
         </div>
       </section>

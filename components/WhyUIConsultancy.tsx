@@ -14,8 +14,8 @@ export const WhyUIConsultancy: React.FC = () => {
   const pillars = [
     {
       icon: Award,
-      title: "University Senate Recognition",
-      description: "All Executive Diplomas and Professional Certificates are officially issued under the authority of the University of Ibadan Senate, recognized worldwide across corporate, government, and industry sectors."
+      title: "Recognized UI Consultancy Qualification",
+      description: "All Executive Diplomas and Professional Certificates are officially issued by the University of Ibadan Consultancy Services Unit, recognized across corporate, government, and industry sectors."
     },
     {
       icon: Briefcase,

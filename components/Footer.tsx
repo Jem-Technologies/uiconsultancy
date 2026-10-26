@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed pr-4">
-              Established under the authority of the University Senate, the UI Consultancy Services Unit delivers top-tier executive diplomas, higher diplomas, and professional development programs to bridge academic and industry leadership.
+              The UI Consultancy Services Unit delivers top-tier executive diplomas, higher diplomas, and professional development programs to bridge academic and industry leadership.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-slate-300">
@@ -165,8 +165,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/portal" className="hover:text-ui-gold-300 transition-colors">
-                  Portal Login
+                <Link href="/apply" className="hover:text-ui-gold-300 transition-colors">
+                  Apply Now
                 </Link>
               </li>
             </ul>
